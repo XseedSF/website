@@ -48,9 +48,9 @@ span {
 }
 /**************************** HEADER SECTION **************************************/
 
-.nav>li>a {
+/*.nav>li>a {
   padding: 10px 10px;
-}
+}*/
 
 .headerSection-cover {
   width: 100%;
@@ -63,7 +63,12 @@ span {
   background: transparent;
   border-color: transparent;
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .navBrandImage {
@@ -140,7 +145,8 @@ span {
 }
 
 .smallHeader {
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .smallHeader.firstLine {
@@ -189,6 +195,10 @@ a.work-with-us-a, a.work-with-us-a:visited{
 .hww-container {
   width: 100%;
   height: 95vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hww-container-caption {
@@ -212,6 +222,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
 
 .hww-subtitle {
   font-size: 20px;
+  margin-bottom: 0;
 }
 
 .hww-bottom {
@@ -224,6 +235,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
   position:relative;
   width: 50%;
   float: left;
+  height: 350px;
 }
 .hww-img {
   cursor: pointer;
@@ -351,7 +363,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
 
 /********************************** Portfolio **********************************/
 .portfolio-container {
-  background-color: black;
+  background-color: #353535;
 }
 
 .portfolio-projects {
@@ -367,13 +379,19 @@ a.work-with-us-a, a.work-with-us-a:visited{
 }
 
 .portfolio-project-container {
-  width: 100%;
+  width: 450px;
   height: 100%;
   float: left;
   display: inline-block;
   vertical-align: top;
-  margin-top: 35px;
+  margin-top: 50px;
+  margin-right: 25px;
+  margin-left: 25px;
   position: relative;
+}
+
+.portfolio-project-container-left-element {
+  float: right;
 }
 
 .p-content {
@@ -386,7 +404,6 @@ a.work-with-us-a, a.work-with-us-a:visited{
   bottom: 0;
   left: 0;
   right: 0;
-  zIndex: 100;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
@@ -398,7 +415,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
 }
 
 .portfolio-img {
-  margin: 20px;
+  margin: 0px;
   float: left;
   width: 450px;
 }
@@ -419,6 +436,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
 
 .portfolio-our-work-sub {
   font-size: 20px;
+  margin-bottom: 0;
   color: white;
 }
 
@@ -453,6 +471,9 @@ a.work-with-us-a, a.work-with-us-a:visited{
   width: 100%;
   height: 90vh;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .testimonials-title {
@@ -461,6 +482,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
 
 .testimonial-slider-container {
   width: 75%;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -641,7 +663,8 @@ a.work-with-us-a, a.work-with-us-a:visited{
 }
 
 .team-smallHeader {
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .team-button-container {
@@ -692,6 +715,9 @@ a.team-button-a, a.team-button-a:visited{
   height: 100vh;
   background-color: #F0F0F0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact-container-caption {
@@ -718,6 +744,7 @@ a.team-button-a, a.team-button-a:visited{
 
 .contact-subtitle {
   font-size: 20px;
+  margin-bottom: 0;
 }
 
 .contact-form {
@@ -754,6 +781,7 @@ a.team-button-a, a.team-button-a:visited{
   width: 400px;
   height: 130px;
   resize: none;
+  border-width: 2px;
   padding-left: 10px;
   padding-top: 5px;
   border-color: transparent;
@@ -761,7 +789,7 @@ a.team-button-a, a.team-button-a:visited{
 
 .contact-button-container {
   width: 100%;
-  padding-right: 20px;
+  padding-right: 16px;
   text-align: right;
   margin-top: 20px;
 }
@@ -795,10 +823,11 @@ a.team-button-a, a.team-button-a:visited{
 
 .footer {
   bottom: 0px;
-  width: 100%;
+  width: 70vw;
+  left: 15vw;
   height: 20px;
   position: absolute;
-  padding: 40px;
+  padding: 40px;  
 }
 
 .f-icon-img {
@@ -807,13 +836,36 @@ a.team-button-a, a.team-button-a:visited{
 }
 .footer-xseed { 
   float: left;
+  color: grey;
 }
 .footer-medias { 
   float: right;
 }
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: grey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: grey;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: grey;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: grey;
+}
+
 
 /***************************** Media Querys **********************************/
+@media (min-width: 1440px) {
+  .hww-bottom {
+    width: 40%;
+  }
+}
+
+
 @media (max-width: 768px) {
   .navbar-default .navbar-toggle .icon-bar {
     background-color: white;

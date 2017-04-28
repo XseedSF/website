@@ -20,7 +20,7 @@ const Brands = [
 const Portfolio = () => (
 	<section className="portfolio-container">
 		<div className="portfolio-projects">
-			<div className="portfolio-project-container p-content">
+			<div className="portfolio-project-container p-content portfolio-project-container-left-element">
 				<img className="portfolio-img" 
 		     		alt="How we work" src={proyecto} draggable="false" />
 		     	<div className="p-overlay">
@@ -28,14 +28,14 @@ const Portfolio = () => (
 		     	</div>
 			</div>
 			
-			<div className="portfolio-project-container p-content">
+			<div className="portfolio-project-container p-content portfolio-project-container-left-element">
 				<img className="portfolio-img" 
 		     		alt="How we work" src={proyecto} draggable="false" />
 		     	<div className="p-overlay">
 		     		<h4 className="portfolio-project-name"> Bimbo - App & Web </h4>
 		     	</div>
 			</div>
-			<div className="portfolio-project-container p-content">
+			<div className="portfolio-project-container p-content portfolio-project-container-left-element">
 				<img className="portfolio-img" 
 		     		alt="How we work" src={proyecto} draggable="false" />
 		     	<div className="p-overlay">

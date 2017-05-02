@@ -232,3 +232,18 @@ a.team-contact-a, a.team-contact-a:visited{
   cursor: pointer;
   text-decoration: none;
 }
+
+
+@media (max-width:480px) {
+  
+  .flex-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .team-overlay { 
+    visibility: visible;
+    opacity: 0.7;
+  }
+
+}

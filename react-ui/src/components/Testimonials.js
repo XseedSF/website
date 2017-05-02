@@ -30,8 +30,8 @@ class TestimonialsSlider extends React.Component {
 	      slidesToShow: 1,
 	      slidesToScroll: 1,
 	      //autoplay: true,
-	      autoplaySpeed: 3000,
-	      speed: 2000
+	      //autoplaySpeed: 3000,
+	      speed: 700
 	    };
 	    return (
 	      <div className='testimonial-slider-container'>

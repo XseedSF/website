@@ -473,8 +473,9 @@ a.work-with-us-a, a.work-with-us-a:visited{
 
 /******************************** Testimonials ********************************/
 .testimonials-container {
+  overflow: hidden;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -629,6 +630,10 @@ a.work-with-us-a, a.work-with-us-a:visited{
 }
 
 /******************************** Team ********************************/
+.team-onlyMobile {
+  display: none;
+}
+
 .team-container {
   width: 100%;
   height: 90vh;
@@ -667,8 +672,15 @@ a.work-with-us-a, a.work-with-us-a:visited{
   font-family: 'DINPro-Bold'
 }
 
+.team-smallHeader-first-line {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 .team-smallHeader {
   font-size: 20px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -826,6 +838,10 @@ a.team-button-a, a.team-button-a:visited{
 
 /******************** FOOTER ***********************/
 
+.footer-medias-mobile {
+  display: none;
+}
+
 .footer {
   bottom: 0px;
   width: 70vw;
@@ -848,18 +864,18 @@ a.team-button-a, a.team-button-a:visited{
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: grey;
+    color: #9a9999;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: grey;
+   color: #9a9999;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: grey;
+   color: #9a9999;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: grey;
+   color: #9a9999;
 }
 
 
@@ -1011,6 +1027,10 @@ a.team-button-a, a.team-button-a:visited{
 
   .smallHeader {
     font-size: 18px;
+  }
+
+  .work-with-us {
+    font-size: 14px;
   }
 
   /********************* HOW WE WORK 480 ************************/
@@ -1184,6 +1204,13 @@ a.team-button-a, a.team-button-a:visited{
   
 
   /******************* TEAM 480 ****************/
+  .team-onlyWeb {
+    display: none;
+  }
+  .team-onlyMobile {
+    display: block;
+  }
+
   .team-caption {
     top: 0; 
     left: 0; 
@@ -1200,7 +1227,11 @@ a.team-button-a, a.team-button-a:visited{
   }
 
   .team-smallHeader {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .team-smallHeader-first-line {
+    font-size: 14px;
   }
 
   .team-container {
@@ -1215,12 +1246,15 @@ a.team-button-a, a.team-button-a:visited{
     float: none; 
     margin-left: auto;
     margin-right: auto;
-    width: 48%;
+    width: 130px;
+    font-size: 12px;
   }
 
   .team-middle-button {
     float: none;
     width: auto;
+    margin: 0;
+    font-size: 14px;
   }
 
   .t-hiddenClass {
@@ -1228,8 +1262,25 @@ a.team-button-a, a.team-button-a:visited{
   }
 
   /***************  CONTACT 480 **************/
+  .contact-caption {
+    padding-top: 50px;
+  }
+
+  .contact-container {
+    justify-content: flex-start;
+  }
+
+
+  .contact-container-caption {
+    margin-bottom: 20px;
+  }
+
   .contact-form {
     width: 90%;
+  }
+
+  .contact-title, .contact-divider {
+    display: none;
   }
 
   .contact-name {
@@ -1263,9 +1314,23 @@ a.team-button-a, a.team-button-a:visited{
   }
 
   /************* FOOTER 480 ***************/
+  .footer-medias {
+    display: none;
+  }
+
+  .footer-medias-mobile {
+    display: block;
+  }
+
   .footer {
-    bottom: 40px;
+    left: 0;
+    bottom: 60px;
     text-align: center;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .footer-xseed {
@@ -1274,6 +1339,14 @@ a.team-button-a, a.team-button-a:visited{
 
   .footer-medias {
     float: none;
+  }
+
+  .footer-media-mobile {
+    color: grey;
+  }
+
+  a.footer-media-link, a.footer-media-link:visited{
+    text-decoration: none;
   }
 }
 

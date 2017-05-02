@@ -48,8 +48,9 @@
   padding-left: 100px;
   padding-right: 100px;
   margin: 0;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
   
   display: -webkit-box;
   display: -moz-box;
@@ -63,7 +64,7 @@
 }
 
 .flex-item {
-  background: #00c260;
+  background: #00c964;
   
   width: 250px;
   height: 250px;
@@ -113,7 +114,7 @@
   left: 5%;
   right: auto;
   color: white;
-  background-color: green;
+  background-color: #00c260;
   padding: 5px;
   padding-left: 10px;
   width: 90%;
@@ -133,7 +134,7 @@
 }
 
 .flex-item-hiring {
-  background: #00c260;
+  background: #00c964;
 }
 
 .team-item-hiring {
@@ -172,7 +173,7 @@ a.team-work-with-us-a, a.team-work-with-us-a:visited{
 }
 
 .team-work-with-us:hover {
-  color: #3e3e3e;
+  color: #00c260;
   background-color: white;  
   border-color: white;
   cursor: pointer;

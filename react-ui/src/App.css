@@ -362,6 +362,10 @@ a.work-with-us-a, a.work-with-us-a:visited{
 }
 
 /********************************** Portfolio **********************************/
+#portfolio-project-title {
+  margin-top: 35px;
+}
+
 .portfolio-container {
   background-color: #353535;
 }
@@ -432,6 +436,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
 .portfolio-our-work {
   font-size: 62px;
   color: #00c964;
+  margin-top: 0px;
 }
 
 .portfolio-our-work-sub {
@@ -501,7 +506,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  border: 5px solid green;
+  border: 5px solid #00c964;
   margin-left: auto;
   margin-right: auto;
 }
@@ -982,7 +987,7 @@ a.team-button-a, a.team-button-a:visited{
   }
 
   .video-caption {    
-    margin-top: 60px;
+    margin-top: 0px;
     top: 0; 
     left: 0; 
     -webkit-transform: none; 
@@ -1004,6 +1009,10 @@ a.team-button-a, a.team-button-a:visited{
     font-size: 45px;
   }
 
+  .smallHeader {
+    font-size: 18px;
+  }
+
   /********************* HOW WE WORK 480 ************************/
   .hww-caption {
     padding-left: 10px;
@@ -1020,23 +1029,23 @@ a.team-button-a, a.team-button-a:visited{
   }
 
   .hww-img-container {
-    width: 250px;
+    width: 220px;
     float: none;
-    height: 250px;
+    height: 220px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .hww-img {    
     position: absolute;
-    width: 250px;
+    width: 220px;
   }
 
   .hww-img-inline {
     cursor: pointer;
     display: block;
     position: absolute;
-    width: 190px;
+    width: 152px;
     top: 35px;
     left: 35px;
   }
@@ -1047,7 +1056,7 @@ a.team-button-a, a.team-button-a:visited{
     text-align: center;
     margin-left: auto;
     margin-right: auto;  
-    height: 195px;
+    height: 215px;
     position: relative;
   }
 
@@ -1057,11 +1066,12 @@ a.team-button-a, a.team-button-a:visited{
 
   .hww-text-title {
     font-size: 25px;
-    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
   .hww-text-text {
-    font-size: 15px;
+    font-size: 14px;
 
   }
 
@@ -1102,6 +1112,7 @@ a.team-button-a, a.team-button-a:visited{
 
   .portfolio-our-work {
     font-size: 45px;
+    margin-top: 20px;
   }
 
   .portfolio-our-work-sub {
@@ -1111,6 +1122,9 @@ a.team-button-a, a.team-button-a:visited{
   .portfolio-project-container {
     
     margin-top: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     
   }
 
@@ -1147,6 +1161,22 @@ a.team-button-a, a.team-button-a:visited{
     font-size: 16px;
   }
   
+  .testimonial-img-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .testimonial-slider-container {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .testimonial-div-text {
+    width: 100%;    
+    font-size: 15px; 
+    margin-bottom: 20px;   
+  }
+
   .testimonial-text, .testimonial-name, .testimonial-company {
     margin-bottom: 5px;
   }

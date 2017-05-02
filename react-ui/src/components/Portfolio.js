@@ -42,7 +42,7 @@ const Portfolio = () => (
 		     		<h4 className="portfolio-project-name"> Bimbo - App & Web </h4>
 		     	</div>
 			</div>
-			<div id="portfolio-project-title" className="portfolio-project-container" style={{paddingLeft: '20px'}}>
+			<div id="portfolio-project-title" className="portfolio-project-container" >
 				<h1 className="portfolio-our-work"> Our Work </h1>
 				<p className="portfolio-our-work-sub">Take an in-depth look at the things</p>
 				<p className="portfolio-our-work-sub">we do and how we do them</p>

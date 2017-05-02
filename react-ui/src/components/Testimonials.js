@@ -29,7 +29,7 @@ class TestimonialsSlider extends React.Component {
 	      infinite: true,
 	      slidesToShow: 1,
 	      slidesToScroll: 1,
-	      autoplay: true,
+	      //autoplay: true,
 	      autoplaySpeed: 3000,
 	      speed: 2000
 	    };

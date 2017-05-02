@@ -2,7 +2,6 @@ import React from 'react';
 
 const TextCaption = () => {
 	return (
-
 		<div className="tp-caption-container">
 			<div className="tp-caption">
                 <p className="tp-bigHeader ">The faces of XseedIT</p>
@@ -10,7 +9,6 @@ const TextCaption = () => {
                 
             </div>
         </div>
-
 	)
 } 
 export default TextCaption;

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-import facebook from '../../images/social-facebook.png';
-import twitter from '../../images/social-twitter.png';
-import instagram from '../../images/social-instagram.png';
+import facebook from '../../images/fb.png';
+import twitter from '../../images/tw.png';
+import instagram from '../../images/ig.png';
 
 export const TeamItemHiring = (props) => (
 	<div className="flex-item flex-item-hiring">
@@ -26,17 +26,17 @@ export const TeamItemSocialMedias = (props) => (
 			<div className="team-text-social">
 				Take the inside scoop!
 			</div>
-	     	<div className="footer-medias">				
+	     	<div className="">				
 				<a href="https://www.facebook.com/xseeditsolutions/" target="_blank" >
-					<img className="f-icon-img" alt="facebook" src={facebook} draggable="false" /> 
+					<img className="tp-f-icon-img" alt="facebook" src={facebook} draggable="false" /> 
 				</a>
                 
                 <a href="https://www.instagram.com/xseedsf/" target="_blank" >
-					<img className="f-icon-img" alt="instagram" src={instagram} draggable="false" /> 
+					<img className="tp-f-icon-img" alt="instagram" src={instagram} draggable="false" /> 
 				</a>
 
 				<a href="https://twitter.com/XseedSF/" target="_blank" >
-					<img className="f-icon-img" alt="twitter" src={twitter} draggable="false" /> 
+					<img className="tp-f-icon-img" alt="twitter" src={twitter} draggable="false" /> 
 				</a>
 			</div>
 		</div>

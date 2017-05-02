@@ -25,25 +25,26 @@ const TeamArray = [
   { id: 18, name: 'Santiago Rivero', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/team-n-pereira.png') },
   { id: 180, name: 'Hiring' },
   { id: 19, name: 'Pablo Revetria', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/team-p-revetria.png') },
-  { id: 20, name: 'Federico Sendra', role: 'Mobile Developer', image: require('../../images/team/team-f-sendra.png') }
+  { id: 20, name: 'Federico Sendra', role: 'Mobile Developer', image: require('../../images/team/team-f-sendra.png') },
+  { id: 21, name: 'Federico Sendra', role: 'Mobile Developer', image: require('../../images/team/team-f-sendra.png') }
 
 ];
 
 const TeamContent = () => (
-    <div>
-        <div className="flex-container">
-        	{TeamArray.map((item, index) => {
-        		if(index === 8)
-        			return <TeamItemHiring key={item.id} {...item} />
-        		else if (index === 12) 
-        			return <TeamItemSocialMedias key={item.id} {...item} />
-        		else if (index === 20)
-        			return <TeamItemContact key={item.id} {...item} />
-        		else 
-        			return <TeamItem key={item.id} {...item} />
-        	})}		  
-		</div>
+  <div className="tp-team-content">
+    <div className="flex-container">
+      {TeamArray.map((item, index) => {
+        if(index === 8)
+          return <TeamItemHiring key={item.id} {...item} />
+        else if (index === 12) 
+          return <TeamItemSocialMedias key={item.id} {...item} />
+        else if (index === 20)
+          return <TeamItemContact key={item.id} {...item} />
+        else 
+          return <TeamItem key={item.id} {...item} />
+      })}		  
     </div>
+  </div>
 )
 
 export default TeamContent;

@@ -4,6 +4,7 @@
   
   width: 100%;
   height: 87vh;
+  background-color: #f0f0f0;
   
 }
 
@@ -41,6 +42,10 @@
 .tp-smallHeader {
   font-size: 18px;
   margin-top: 10px
+}
+
+.tp-team-content {
+  background-color: #f0f0f0;
 }
 
 .flex-container {
@@ -134,13 +139,14 @@
 }
 
 .flex-item-hiring {
-  background: #00c964;
+  background-color: #00c964;
 }
 
 .team-item-hiring {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #3d3d3d;
 }
 
 .team-text-hiring {
@@ -149,6 +155,14 @@
   padding-left: 40px;
   padding-right: 40px;
   font-style: italic;
+  color: white;
+}
+
+.tp-f-icon-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 a.team-work-with-us-a, a.team-work-with-us-a:visited{
@@ -181,7 +195,7 @@ a.team-work-with-us-a, a.team-work-with-us-a:visited{
 }
 
 .flex-item-social {
-  background: #fff;
+  background-color: #f0f0f0;
 }
 
 .team-text-social {
@@ -189,11 +203,11 @@ a.team-work-with-us-a, a.team-work-with-us-a:visited{
   font-size: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  color: black;
+  color: #3d3d3d;
 }
 
 .flex-item-contact {
-  background: #fff;
+  background-color: #f0f0f0;
 }
 
 .team-text-contact {
@@ -201,11 +215,10 @@ a.team-work-with-us-a, a.team-work-with-us-a:visited{
   font-size: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  color: black;
 }
 
 a.team-contact-a, a.team-contact-a:visited{
-  color:black;
+  color:#3d3d3d;
   text-decoration: none;
 }
 
@@ -227,15 +240,132 @@ a.team-contact-a, a.team-contact-a:visited{
 
 .team-contact:hover {
   color: white;
-  background-color: black;  
+  background-color: #3d3d3d;  
   border-color: white;
   cursor: pointer;
   text-decoration: none;
 }
 
+.tp-join-us {
+  background-color: #fff;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tp-join-us-image-container {
+  position:relative;
+  width: 50%;
+  float: left;
+}
+
+.tp-join-us-img {
+  cursor: pointer;
+  display: block;
+  float: right;
+  margin-right: 70px;
+  width: 265px;
+}
+
+.tp-join-us-text {
+  width: 40%;
+  float: left;
+}
+
+.tp-join-us-title {
+  font-size: 48px;
+}
+
+.tp-join-us-subtitle {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.tp-join-us-divider {
+  height: 1px;
+  background-color: grey;
+  width: 150px;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.tp-drop-mail {
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.tp-contact-container {
+  width: 100%;
+  height: 95vh;
+  background-color: #00c964;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tp-contact-container-caption {  
+  text-align: center;
+  width: 45%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+}
+
+.tp-contact-divider {
+  height: 1px;
+  background-color: grey;
+  width: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.tp-contact-title {
+  font-family:'DINPro-Bold';
+  color: white;
+  font-size: 48px;
+  margin-top: 0px;
+  padding-top: 20px;
+
+}
+
+.tp-contact-subtitle {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.tp-footer-xseed {
+  float: left;
+  color: #90e7b2;
+}
+
+.tp-contact-button {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .tp-contact-container-caption {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0; 
+  }
+}
 
 @media (max-width:480px) {
   
+  .tp-smallHeader {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
   .flex-container {
     padding-left: 0;
     padding-right: 0;
@@ -246,4 +376,59 @@ a.team-contact-a, a.team-contact-a:visited{
     opacity: 0.7;
   }
 
+  .tp-join-us {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .tp-join-us-image-container {
+    position:relative;
+    width: auto;
+    float: none;
+  }
+
+  .tp-join-us-img {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    width: 230px;
+  }
+
+  .tp-join-us-title {
+    font-size: 35px;
+  }
+
+  .tp-join-us-subtitle, .tp-drop-mail {
+    font-size: 14px;
+  }
+
+  .tp-join-us-divider {
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tp-join-us-text {
+    width: auto;
+    float: none;
+    text-align: center;
+  }
+
+  .tp-contact-container-caption {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0; 
+  }
+
+  .tp-footer-xseed {
+    float: none;
+  }
+
+  .tp-footer-media-mobile {
+    color: #90e7b2;
+  }
+
+  .tp-footer-medias-mobile {
+    color: #90e7b2;
+  }
 }

@@ -1268,6 +1268,7 @@ a.team-button-a, a.team-button-a:visited{
 
   .contact-container {
     justify-content: flex-start;
+    height: 95vh;
   }
 
 
@@ -1324,7 +1325,6 @@ a.team-button-a, a.team-button-a:visited{
 
   .footer {
     left: 0;
-    bottom: 60px;
     text-align: center;
     height: auto;
     margin-left: auto;

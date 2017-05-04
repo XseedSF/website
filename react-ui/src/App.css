@@ -888,12 +888,18 @@ a.team-button-a, a.team-button-a:visited{
 
 
 @media (max-width: 768px) {
+  
+  .navbar-toggle {
+    z-index: 5;
+  }
+
   .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
   }
 
   .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: transparent;  
+    background-color: transparent; 
+    
   }
 
   .navbar-default .navbar-toggle {
@@ -902,12 +908,30 @@ a.team-button-a, a.team-button-a:visited{
 
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: transparent;
-    background-color: black;
+    background-color: #00c964;
+    top: -30px;
+    height: 100vh;
+    margin-left: -16px;
+    margin-top: -1px;
   }
 
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     position: absolute;
-    width: 100%;
+    width: 100vw;
+  }
+  
+  ul.navbar-nav {
+    height: 95vh;
+    padding-top: 30%;
+    text-align: center;
+  }
+
+  .navItem {
+    font-size: 20px;
+  }
+
+  .nav>li {
+    height: 50px;
   }
 
   /********* HOME 768 **********/

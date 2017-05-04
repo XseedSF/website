@@ -6,7 +6,7 @@
     "node": "6.9.x"
   },
   "scripts": {
-    "start": "cd react-ui/ && npm run build && node ../server/index.js",
+    "start": "cd react-ui/ && npm install && npm run build && node ../server/index.js",
     "heroku-postbuild": "cd react-ui/ && npm install --only=dev && npm install && npm run build"
   },
   "cacheDirectories": [
@@ -19,13 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mars/heroku-cra-node.git"
+    "url": "https://github.com/XseedSF/website"
   },
   "keywords": [
     "node",
     "heroku",
     "create-react-app",
-    "react"
+    "react",
+    "azure"
   ],
   "license": "MIT",
   "devDependencies": {}

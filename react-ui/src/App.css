@@ -889,8 +889,21 @@ a.team-button-a, a.team-button-a:visited{
 
 @media (max-width: 768px) {
   
+  /*.icon-bar {
+    visibility: hidden;
+  }
+
+  .collapsed>.icon-bar {
+    visibility: visible;
+  }*/
+
   .navbar-toggle {
     z-index: 5;
+  }
+
+  .navbar-brand {
+    z-index: 5;
+    position: relative;
   }
 
   .navbar-default .navbar-toggle .icon-bar {
@@ -928,6 +941,7 @@ a.team-button-a, a.team-button-a:visited{
 
   .navItem {
     font-size: 20px;
+    color: #90e7b2;
   }
 
   .nav>li {

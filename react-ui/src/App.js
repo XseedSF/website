@@ -19,15 +19,21 @@ import TeamPage from './components/TeamPage.js';
 configureAnchors({offset: -0, scrollDuration: 800})
 
 class App extends Component {
-  render() {
-    return (
-        <Router> 
-            <div>                
-                <Route exact={true} path="/"  component={HomeApp} />
-                <Route path="/team" component={TeamPage} /> 
-            </div>
-        </Router>
-    );
+    
+    render() {
+        const ScrollToTop = () => {
+          window.scrollTo(0, 0);
+          return null;
+        };
+        return (
+            <Router onUpdate={() => window.scrollTo(0, 0)}> 
+                <div>                                  
+                    <Route exact={true} path="/"  component={HomeApp} />
+                    <Route path="/team" component={ScrollToTop} />
+                    <Route path="/team" component={TeamPage} /> 
+                </div>
+            </Router>
+        );
   }
 }
 

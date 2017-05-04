@@ -426,8 +426,8 @@ a.work-with-us-a, a.work-with-us-a:visited{
 
 .portfolio-project-name {
     position: absolute;
-    top: 415px;
-    left: 35px;
+    top: 400px;
+    left: 10px;
     color: white;
     background-color: green;
     padding: 5px;

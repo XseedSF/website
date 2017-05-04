@@ -16,7 +16,7 @@ const Team = () => (
 
                 <br/><br/>
                 <div className="team-button-container"> 
-                    <Link className="team-button-a" to={'/team#home'}>                        
+                    <Link className="team-button-a" to={'/team'}>                        
                         <p className="team-button"> Meet Them </p>                
                     </Link>
                     <div className="clear t-hiddenClass" />

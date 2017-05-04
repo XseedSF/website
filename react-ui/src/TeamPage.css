@@ -290,6 +290,11 @@ a.team-contact-a, a.team-contact-a:visited{
   margin-bottom: 20px;
 }
 
+.tp-drop-mail-link {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
 .tp-drop-mail {
   font-size: 18px;
   font-style: italic;

@@ -29,6 +29,33 @@ app.get('/api', function (req, res) {
   res.send('{"message":"Hello from the custom server!"}');
 });
 
+app.get('/send',function(req,res){
+
+  var mailText = `Contacto del usuario, 
+  Nombre: ${req.query.name} 
+  Mail: ${req.query.mail} 
+  Mensaje: ${req.query.text}`;
+  
+  var mailOptions={
+    to : 'dcaceres@xseed.com.uy',
+    subject : req.query.subject,
+    text : mailText
+  }
+  
+  console.log(mailOptions);
+  smtpTransport.sendMail(mailOptions, function(error, response){
+    if(error){
+      console.log(error);
+      res.json({error: 'errrrrror'});
+      //res.end("error");
+    }else{
+      console.log("Message sent: " + response.message);
+      //res.end("sent");
+      res.json({data: 'send'});
+    }
+  });
+});
+
 // All remaining requests return the React app, so it can handle routing.
 app.get('*', function(request, response) {
   response.sendFile(path.resolve(__dirname, '../react-ui/build', 'index.html'));

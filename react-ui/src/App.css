@@ -882,7 +882,7 @@ a.team-button-a, a.team-button-a:visited{
 /***************************** Media Querys **********************************/
 @media (min-width: 1440px) {
   .hww-bottom {
-    width: 40%;
+    width: 50%;
   }
 }
 

@@ -106,9 +106,17 @@ class ProcessImage extends Component {
     	if(this.state.on)
     		return;
 
-  		let newIndex = this.state.index - 1;
-  		let currentItems = this.state.items;
-  		currentItems.pop()
+  		let newIndex = (this.state.index - 1);
+      let currentItems;
+      if(newIndex  === 0) {
+        //Reiniciar
+        newIndex = 6;
+        currentItems = [img1, img2, img3, img4, img5, img6]; 
+      }
+      else {
+    		currentItems = this.state.items;
+    		currentItems.pop();
+      }
   		
   		let newImg, newInline;
     	switch(newIndex) {

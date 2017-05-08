@@ -1,0 +1,109 @@
+
+.p-header-container {
+  
+  width: 100%;
+  height: 87vh;
+  background-color: #f0f0f0;
+  
+}
+
+.p-caption-container {
+  position: absolute;
+  /*background: url('./images/teamHome_BG.png');*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+
+  color: white; 
+  width: 100%;
+  height: 90%;
+  top: 0px;
+
+  display: flex;
+	flex-direction: column;
+  justify-content: flex-end;
+}
+
+.p-caption-subcontainer {
+	width: 60%;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.p-caption {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-icon-img {
+  width: 80px;
+  margin-bottom: 50px;
+}
+
+.p-bigHeader {
+  font-size: 40px;
+  font-family: 'DINPro-Bold';
+  margin-bottom: 0px;
+}
+
+.p-header-subtitle {
+	font-family: 'DINPro-Bold';
+	font-size: 12px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.p-description {
+  font-size: 18px;
+  margin-top: 10px
+}
+
+.p-team-content {
+  background-color: #f0f0f0;
+}
+
+/************* INFO TEXT ***************/
+
+.p-info-text-container {
+	width: 70%;
+	height: 70vh;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.p-info-text-title-container {
+	display: flex;
+	align-items: center;
+}
+
+.p-info-text-arrow {
+	margin-right: 10px;
+}
+
+.p-info-text-smallTitle {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.p-info-text-title {
+	font-family: 'DINPro-Bold';
+	margin: 0;
+	margin-left: 50px;
+	font-size: 40px;
+}
+
+.p-info-text-description {
+	margin-left: 158px;
+	margin-top: 30px;
+}

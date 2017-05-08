@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './TeamPage.css';
+import './Portfolio.css';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -13,6 +14,8 @@ import Contact from './components/Contact.js';
 
 
 import TeamPage from './components/TeamPage.js';
+
+import PortfolioPage from './components/PortfolioPage';
 
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
@@ -31,6 +34,8 @@ class App extends Component {
                     <Route exact={true} path="/"  component={HomeApp} />
                     <Route path="/team" component={ScrollToTop} />
                     <Route path="/team" component={TeamPage} /> 
+                    <Route path="/portfolio" component={ScrollToTop} />
+                    <Route path="/portfolio/:portfolioId" component={PortfolioPage} /> 
                 </div>
             </Router>
         );

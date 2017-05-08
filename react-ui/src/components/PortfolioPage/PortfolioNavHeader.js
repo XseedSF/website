@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import logo from '../../images/xSeedLogo.png';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const PortfolioNavHeader = () => (
   <Navbar collapseOnSelect className="navbar">
@@ -13,7 +13,7 @@ const PortfolioNavHeader = () => (
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
-    <Navbar.Collapse>      
+    <Navbar.Collapse>
       <Nav pullRight>
         <li>
           <Link to={'/#home'}>
@@ -21,23 +21,23 @@ const PortfolioNavHeader = () => (
           </Link>
         </li>
         <li >
-          <Link to={'/#hww'}>          
-            <span className="navItem">How we work</span> 
+          <Link to={'/#hww'}>
+            <span className="navItem">How we work</span>
           </Link>
         </li>
         <li >
-          <Link to={'/portfolio'}>     
+          <Link to={'/portfolio'}>
             <span className="navItem">Portfolio</span>
           </Link>
         </li>
         <li >
-          <Link to={'/#team'}> 
-            <span className="navItem">Team</span> 
-          </Link> 
+          <Link to={'/#team'}>
+            <span className="navItem">Team</span>
+          </Link>
         </li>
         <li >
-          <Link to={'/#contact'}>  
-            <span className="navItem">Contact us</span> 
+          <Link to={'/#contact'}>
+            <span className="navItem">Contact us</span>
           </Link>
         </li>
       </Nav>

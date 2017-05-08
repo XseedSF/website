@@ -10,9 +10,9 @@ const InfoText = (props) => {
         <p className="p-info-text-smallTitle">{props.smallTitle}</p>
         <p className="p-info-text-title">{props.title}</p>
       </div>
-			<div className="">				
-        <p className="p-info-text-description">{props.text}</p>
-      </div>      
+			<div className="">
+        <div className="p-info-text-description">{props.text}</div>
+      </div>
     </div>
 	)
 }

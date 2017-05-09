@@ -1,6 +1,5 @@
 import React from 'react';
-import img from '../images/hhw_01.png';
-import ProcessImage from './HowWeWork/ProcessImage.js';
+import ProcessImage from './ProcessImage.js';
 
 const HowWeWork = () => (
 	<section className="hww-container">

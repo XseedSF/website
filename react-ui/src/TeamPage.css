@@ -10,7 +10,7 @@
 
 .tp-caption-container {
   position: absolute;
-  background: url('./images/teamHome_BG.png');
+  background: url('./images/bgteam02.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -50,8 +50,6 @@
 
 .flex-container {
   padding: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;

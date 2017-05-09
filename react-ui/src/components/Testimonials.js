@@ -7,7 +7,7 @@ const Testimonial = (props) => {
 	return ( 
 		<div className="testimonial-inside-slider">
 			<div className="testimonial-div-image">
-				<img className="testimonial-img-circle" src={props.image}/>
+				<img className="testimonial-img-circle" src={props.image} alt="testimonio"/>
 			</div>
 			<div className="testimonial-div-text">
 				<p className="testimonial-text"> 

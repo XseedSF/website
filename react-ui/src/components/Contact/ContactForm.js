@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {sendEmail} from './api.js';
 import ReactTimeout from 'react-timeout';
 
-class ContactForm extends React.Component {
+class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +14,7 @@ class ContactForm extends React.Component {
       successMessage: ''
     };
 
-    this.handleInputChange  = this.handleInputChange .bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 

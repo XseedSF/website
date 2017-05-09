@@ -1,13 +1,15 @@
 import React from 'react';
 
-import arrowNext from '../../images/icon-next.png';
+import arrow from '../../images/portfolio/arrow.png';
 
 const InfoText = (props) => {
-	return (
+	return (    
 		<div className="p-info-text-container">
 			<div className="p-info-text-title-container">
-        <img className="p-info-text-arrow" src={arrowNext}/>
-        <p className="p-info-text-smallTitle">{props.smallTitle}</p>
+        <div className="p-info-text-arrow-text">
+          <img className="p-info-text-arrow" src={arrow} alt="" />
+          <p className="p-info-text-smallTitle">{props.smallTitle}</p>
+        </div>
         <p className="p-info-text-title">{props.title}</p>
       </div>
 			<div className="">

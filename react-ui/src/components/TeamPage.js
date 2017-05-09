@@ -1,6 +1,7 @@
 import React from 'react';
 
-import TeamNavHeader from './TeamPage/TeamNavHeader.js';
+import NavHeader from './NavHeader/NavHeader.js';
+
 import TextCaption from './TeamPage/TextCaption';
 import TeamContent from './TeamPage/TeamContent';
 import TeamJoinUs from './TeamPage/TeamJoinUs';
@@ -25,7 +26,13 @@ const TeamHeaderSection = () => {
 		<div id="home" className="tp-header-container" >
 			<ScrollableAnchor id={'home'}>
 		 		<div>
-		 			<TeamNavHeader />
+		 			<NavHeader 
+            homeLink="/#home"
+            hwwLink="/#hww"
+            portfolioLink="/#portfolio"
+            teamLink="/team"
+            contactUsLink="/#contact"
+          />
 		 			<TextCaption />	
 		 		</div>
 		 	</ScrollableAnchor>		       

@@ -1,14 +1,20 @@
 import React from 'react';
-import PortfolioNavHeader from './PortfolioNavHeader';
+import NavHeader from '../NavHeader/NavHeader.js';
 import Header from './Header';
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const PortfolioHeaderSection = (props) => {
 	return (
 		<div id="home" className="p-header-container" >
 			<ScrollableAnchor id={'home'}>
 		 		<div>
-		 			<PortfolioNavHeader />
+		 			<NavHeader 
+            homeLink="/#home"
+            hwwLink="/#hww"
+            portfolioLink="#"
+            teamLink="/#team"
+            contactUsLink="/#contact"
+          />
 		 			<Header {...props}/>
 		 		</div>
 		 	</ScrollableAnchor>

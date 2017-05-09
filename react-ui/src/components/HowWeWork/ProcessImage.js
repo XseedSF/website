@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Slider from 'react-slick';
 //import ReactCSSTransitionGroup from 'react-addons-transition-group';
 import ReactTimeout from 'react-timeout';
 import ReactCSSTransitionGroup from 'react/lib/ReactCSSTransitionGroup';
@@ -63,11 +62,11 @@ class ProcessImage extends Component {
     			newImg = img1;
     			newInline = imgInline1;
     			break;
-			case 2:
+        case 2:
     			newImg = img2;
     			newInline = imgInline2;
     			break;
-			case 3:
+        case 3:
     			newImg = img3;
     			newInline = imgInline3;
     			break;
@@ -75,14 +74,18 @@ class ProcessImage extends Component {
     			newImg = img4;
     			newInline = imgInline4;
     			break;
-			case 5:
+        case 5:
     			newImg = img5;
     			newInline = imgInline5;
     			break;
-			case 6:
+        case 6:
     			newImg = img6;
     			newInline = imgInline6;
     			break;
+        default:
+          newImg = img1;
+          newInline = imgInline1;
+          break;
     	}
     	const newItems = currentItems.concat([
 	      newImg
@@ -118,7 +121,7 @@ class ProcessImage extends Component {
     		currentItems.pop();
       }
   		
-  		let newImg, newInline;
+  		let newInline;
     	switch(newIndex) {
     		case 1:    			
     			newInline = imgInline1;
@@ -138,6 +141,9 @@ class ProcessImage extends Component {
 			case 6:
     			newInline = imgInline6;
     			break;
+      default:
+          newInline = imgInline6;
+          break;
     	} 
 	    this.setState({
       	index: newIndex,
@@ -162,16 +168,14 @@ class ProcessImage extends Component {
   render() {
       
 	const items = this.state.items.map((item, i) => (
-      <img className="hww-img" 
-     		alt="How we work" src={item} onClick={this.nextStep} draggable="false" />
+      <img className="hww-img" key={i}
+     		alt="How we work" src={item} onClick={this.nextStep} draggable="false" />      
     ));
 
-    const texts = this.state.items.map((item, i) => (
-	    <img className="hww-img" 
+    /*const texts = this.state.items.map((item, i) => (
+	    <img className="hww-img" key={i}
      		alt="How we work" src={item} onClick={this.nextStep} draggable="false" />
-    ));	 
-
-    //let classNameBackArrow = this.state.index > 1 ? 'hww-arrow' : 'hww-arrow-hidden';
+    ));	*/ 
 
     return (
     	<div className="hww-bottom">
@@ -192,11 +196,11 @@ class ProcessImage extends Component {
 		     		</div>
 	     		</ReactCSSTransitionGroup>
 	     		<div className="hww-arrow-container">
-	     			<img className="hww-arrow" 
+	     			<img className="hww-arrow" alt="previous"
 						      src={arrowBefore} 
 				          draggable="false"
 						      onClick={this.previousStep}/> 
-	     			<img className="hww-arrow"
+	     			<img className="hww-arrow" alt="next"
                   src={arrowNext} 
                   draggable="false" 
                   onClick={this.nextStep}/>

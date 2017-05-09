@@ -6,8 +6,10 @@ const NextCase = (props) => {
 	return (
 		<div className="p-next-case-container">
 			<div className="p-info-text-title-container">
-        <img className="p-info-text-arrow" src={arrowNext}/>
-        <p className="p-info-text-smallTitle">next case</p>
+        <div className="p-info-text-arrow-text">
+        	<img className="p-info-text-arrow" src={arrowNext} alt="next"/>
+        	<p className="p-info-text-smallTitle">next case</p>
+        </div>
         <p className="p-info-text-title">{props.title}</p>
       </div>
 			<div className="">

@@ -10,9 +10,9 @@ const TeamContact = () => (
 				<p className="tp-contact-subtitle"> Reach us, we´re eager to start building amazing stuff for you! </p>
 			</div>
 			<div className="tp-contact-button">
-	     		<Link className="team-work-with-us-a" to={'/#contact'}>
-	                <span className="team-work-with-us"> LET´S CHAT </span>
-	            </Link>
+	     		<Link className="team-work-with-us-a" to={'/#contact'} onClick={() => window.scrollTo(0, 0)}>
+              <span className="team-work-with-us"> LET´S CHAT </span>
+          </Link>
 	     	</div>
 		</div>
 

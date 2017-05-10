@@ -15,10 +15,10 @@ const Brands = [
 const Portfolio = () => (
 	<section className="portfolio-container">
 		<div className="portfolio-projects">
-			
+
 			<div className="portfolio-project-container p-content portfolio-project-container-left-element">
 				<Link to={'/portfolio/1'}>
-					<img className="portfolio-img" 
+					<img className="portfolio-img"
 		     		alt="How we work" src={proyecto} draggable="false" />
 		     	<div className="p-overlay">
 		     		<h4 className="portfolio-project-name"> GuTrade - Mobile & Web App / Website </h4>
@@ -26,12 +26,12 @@ const Portfolio = () => (
 		    </Link>
 			</div>
 
-			
-			
-			
+
+
+
 			<div className="portfolio-project-container p-content portfolio-project-container-left-element">
 				<Link to={'/portfolio/3'}>
-					<img className="portfolio-img" 
+					<img className="portfolio-img"
 		     		alt="How we work" src={proyecto} draggable="false" />
 		     	<div className="p-overlay">
 		     		<h4 className="portfolio-project-name"> Sura - App & Web </h4>
@@ -40,8 +40,8 @@ const Portfolio = () => (
 			</div>
 
 			<div className="portfolio-project-container p-content portfolio-project-container-left-element">
-				
-					<img className="portfolio-img" 
+
+					<img className="portfolio-img"
 		     		alt="How we work" src={proyecto} draggable="false" />
 		     	<div className="p-overlay">
 		     		<h4 className="portfolio-project-name"> Bimbo </h4>
@@ -56,7 +56,7 @@ const Portfolio = () => (
 
 			<div className="portfolio-project-container p-content">
 				<Link to={'/portfolio/2'}>
-					<img className="portfolio-img" 
+					<img className="portfolio-img"
 		     		alt="How we work" src={proyecto} draggable="false" />
 		     	<div className="p-overlay">
 		     		<h4 className="portfolio-project-name"> Melancia - App & Web </h4>
@@ -64,7 +64,7 @@ const Portfolio = () => (
 	     	</Link>
 			</div>
 			<div className="portfolio-project-container p-content">
-				<img className="portfolio-img" 
+				<img className="portfolio-img"
 		     		alt="How we work" src={proyecto} draggable="false" />
 		     	<div className="p-overlay">
 		     		<h4 className="portfolio-project-name"> Bimbo - App & Web </h4>
@@ -73,16 +73,16 @@ const Portfolio = () => (
 		</div>
 		<div className="clear"> </div>
 		<div className="portfolio-client-cont">
-			<h2 className="portfolio-client-cont-title"> Other clients we're very proud of</h2>
+			<h2 className="portfolio-client-cont-title"> {`Other clients we're very proud of`}</h2>
 			<div className="portfolio-client-list-cont">
-				{Brands.map((brand) => 
+				{Brands.map((brand) =>
 					<div className="portfolio-client-logo-cont" key={brand.id}>
-						<img className="portfolio-logo-img" 
+						<img className="portfolio-logo-img"
 		     				alt="How we work" src={brand.image} draggable="false" />
 					</div>
 				)}
 			</div>
-		
+
 		</div>
 	</section>
 );

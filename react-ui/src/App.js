@@ -36,49 +36,45 @@ const HomeApp = () => (
                 <HowWeWork />
             </div>
         </ScrollableAnchor>
-                
+
         <ScrollableAnchor id={'portfolio'}>
-            <div> 
+            <div>
                 <Portfolio />
+                <TestimonialsSection />
             </div>
         </ScrollableAnchor>
 
-        <ScrollableAnchor id={'test'}>
-                <div> 
-                    <TestimonialsSection />             
-                </div>
-        </ScrollableAnchor>
-
         <ScrollableAnchor id={'team'}>
-                <div> 
+                <div>
                     <Team />
                 </div>
         </ScrollableAnchor>
 
         <ScrollableAnchor id={'contact'}>
-                <div> 
+                <div>
                     <Contact />
                 </div>
         </ScrollableAnchor>
-        
+
     </div>
 );
 
 class App extends Component {
-    
+
     render() {
         const ScrollToTop = () => {
           window.scrollTo(0, 0);
           return null;
         };
         return (
-            <Router onUpdate={() => window.scrollTo(0, 0)}> 
-                <div>                                  
-                    <Route exact={true} path="/"  component={HomeApp} />
+            <Router onUpdate={() => window.scrollTo(0, 0)}>
+                <div>
+                    <Route exact={true} path="/" component={HomeApp} />
+
                     <Route path="/team" component={ScrollToTop} />
-                    <Route path="/team" component={TeamPage} /> 
+                    <Route path="/team" component={TeamPage} />
                     <Route path="/portfolio" component={ScrollToTop} />
-                    <Route path="/portfolio/:portfolioId" component={PortfolioPage} /> 
+                    <Route path="/portfolio/:portfolioId" component={PortfolioPage} />
                 </div>
             </Router>
         );

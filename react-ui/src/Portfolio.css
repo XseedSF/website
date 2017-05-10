@@ -2,7 +2,7 @@
 .p-header-container {
 
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   background-color: white;/*#f0f0f0;*/
 
 }
@@ -37,7 +37,8 @@
 }
 
 .p-caption-subcontainer {
-	width: 60%;
+  width: 70%;
+  padding-left: 150px;
 	height: 70%;
 	margin-left: auto;
 	margin-right: auto;
@@ -83,7 +84,9 @@
 
 .p-info-text-container {
 	width: 70%;
-	height: 70vh;
+	/*height: 70vh;*/
+  padding-top: 100px;
+  padding-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -127,6 +130,8 @@
   white-space: pre-wrap;
 	margin-left: 150px;
 	margin-top: 30px;
+  font-family: 'DINPro-Light';
+  font-size: 20px;
 }
 
 /******************** BIG IMAGE *******************/
@@ -164,6 +169,14 @@
   height: 75%;
   margin-left: 25px;
   margin-right: 25px;
+}
+
+/**************** VIDEO SECTION **************/
+
+.p-video-section {
+  width: 100%;
+	height: 100vh;
+  overflow: hidden;
 }
 
 
@@ -206,7 +219,7 @@
   justify-content: space-between;
 }
 
-@media (max-width:480px) { 
+@media (max-width:480px) {
 
   /********* HEADER 480 **********/
   .p-caption-container, .p-caption-container-overlay {
@@ -221,7 +234,7 @@
   .p-icon-img {
     margin-bottom: 25px;
   }
-  
+
   .p-bigHeader {
     font-size: 35px;
   }
@@ -236,7 +249,7 @@
     height: auto;
     margin-top: 25px;
   }
-  
+
   .p-info-text-title-container {
     flex-direction: column;
     align-items: flex-start;
@@ -255,10 +268,10 @@
 
   /********* BIG IMAGE *********/
   .p-big-image {
-    width: auto; 
+    width: auto;
     height: 100vh;
   }
-  
+
   /********* TWO IMAGE *********/
   .p-big-two-image-section {
     flex-direction: column;

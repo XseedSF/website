@@ -3,7 +3,7 @@
 .tp-header-container {
 
   width: 100%;
-  height: 87vh;
+  height: 90vh;
   background-color: #f0f0f0;
 
 }
@@ -49,7 +49,7 @@
 }
 
 .flex-container {
-  padding: 50px;
+  padding: 20px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -75,7 +75,6 @@
 
   color: white;
   font-weight: bold;
-  font-size: 3em;
   text-align: center;
 }
 
@@ -103,7 +102,7 @@
 }
 .team-content:hover .team-overlay {
   visibility: visible;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .team-img {
@@ -113,11 +112,12 @@
 
 .team-member-badge {
   position: absolute;
-  bottom: 10px;
-  left: 5%;
+  bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   right: auto;
   color: white;
-  background-color: #00c260;
+  background-color: rgba(0, 201, 100, 0.70);
   padding: 5px;
   padding-left: 10px;
   width: 90%;
@@ -156,6 +156,10 @@
   color: white;
 }
 
+.team-text-hiring-button-cont {
+  margin-top: 30px;
+}
+
 .tp-f-icon-img {
   width: 30px;
   height: 30px;
@@ -174,6 +178,7 @@ a.team-work-with-us-a, a.team-work-with-us-a:visited{
 
 .team-work-with-us {
   border-style: solid;
+  border-width: 2px;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 16px;
@@ -204,6 +209,10 @@ a.team-work-with-us-a, a.team-work-with-us-a:visited{
   color: #3d3d3d;
 }
 
+.team-text-social-links {
+  padding-top: 15px;
+}
+
 .flex-item-contact {
   background-color: #f0f0f0;
 }
@@ -213,6 +222,10 @@ a.team-work-with-us-a, a.team-work-with-us-a:visited{
   font-size: 20px;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.team-text-contact-button-cont {
+  margin-top: 30px;
 }
 
 a.team-contact-a, a.team-contact-a:visited{
@@ -226,6 +239,7 @@ a.team-contact-a, a.team-contact-a:visited{
 
 .team-contact {
   border-style: solid;
+  border-width: 2px;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 16px;
@@ -349,7 +363,7 @@ a.team-contact-a, a.team-contact-a:visited{
 }
 
 .tp-contact-button {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 @media (max-width: 768px) {
@@ -376,7 +390,7 @@ a.team-contact-a, a.team-contact-a:visited{
 
   .team-overlay {
     visibility: visible;
-    opacity: 0.7;
+    opacity: 1;
   }
 
   .tp-join-us {
@@ -394,7 +408,7 @@ a.team-contact-a, a.team-contact-a:visited{
     float: none;
     margin-right: auto;
     margin-left: auto;
-    width: 230px;
+    width: 190px;
   }
 
   .tp-join-us-title {
@@ -433,5 +447,6 @@ a.team-contact-a, a.team-contact-a:visited{
 
   .tp-footer-medias-mobile {
     color: #90e7b2;
+    font-family: 'DINPro-Light';
   }
 }

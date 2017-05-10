@@ -398,6 +398,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
   -moz-column-gap: 0;
   column-gap: 0;
   width: 80vw;
+  padding-top: 50px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -474,6 +475,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
   padding-bottom: 50px;
   text-align: center;
   color: white;
+
 }
 
 .portfolio-client-list-cont {
@@ -486,6 +488,8 @@ a.work-with-us-a, a.work-with-us-a:visited{
 .portfolio-client-logo-cont {
   width: 30%;
   float: left;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 .portfolio-logo-img {
   width: 215px;
@@ -507,15 +511,17 @@ a.work-with-us-a, a.work-with-us-a:visited{
 }
 
 .testimonial-slider-container {
-  width: 75%;
+  width: 100%;
   margin-top: 10px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;  
   text-align: center;
 }
 
 .testimonial-inside-slider {
-  width: 80%;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -864,11 +870,12 @@ a.team-button-a, a.team-button-a:visited{
 
 .footer {
   bottom: 0px;
-  width: 70vw;
-  left: 15vw;
+  width: 100%;
+  
   height: 20px;
   position: absolute;
-  padding: 40px;  
+  padding-bottom: 40px;  
+  padding-top: 40px;  
 }
 
 .f-icon-img {
@@ -912,6 +919,14 @@ a.team-button-a, a.team-button-a:visited{
   .video {
     width: 100%;
     height: auto;
+  }
+
+  .testimonials-container {
+    height: 70vh;
+  }
+
+  .contact-container {
+    height: 70vh;
   }
 }
 

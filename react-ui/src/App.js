@@ -19,6 +19,7 @@ import PortfolioPage from './components/PortfolioPage';
 import guTradeBg from './images/portfolio/gutrade-bg.png';
 import melanciaBg from './images/portfolio/melancia-bg.png';
 import suraBg from './images/portfolio/sura-bg.png';
+import teamBg from './images/bgteam02.png';
 
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
@@ -43,6 +44,7 @@ const HomeApp = () => (
                 <Portfolio />
                 <img src={guTradeBg} style={{ display: 'none'}}/>
                 <img src={melanciaBg} style={{ display: 'none'}}/>
+                <img src={suraBg} style={{ display: 'none'}}/>
                 <TestimonialsSection />
             </div>
         </ScrollableAnchor>
@@ -50,6 +52,7 @@ const HomeApp = () => (
         <ScrollableAnchor id={'team'}>
                 <div>
                     <Team />
+                    <img src={teamBg} style={{ display: 'none'}}/>
                 </div>
         </ScrollableAnchor>
 

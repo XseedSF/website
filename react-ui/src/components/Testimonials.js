@@ -1,16 +1,16 @@
 import React from 'react';
 import Slider from 'react-slick';
-
+import Gaston from '../images/team/team-g-legnani.png';
 const text1 = "I can't thank these guys enough! Their team was resposible of the creation, development, and launch of my latest app, and everything went beyond my expectations. I hope we can work again sometime soon!";
 
 const Testimonial = (props) => {
-	return ( 
+	return (
 		<div className="testimonial-inside-slider">
 			<div className="testimonial-div-image">
 				<img className="testimonial-img-circle" src={props.image} alt="testimonio"/>
 			</div>
 			<div className="testimonial-div-text">
-				<p className="testimonial-text"> 
+				<p className="testimonial-text">
 					{props.text}
 				</p>
 				<br className="testimonial-break-line" />
@@ -35,28 +35,28 @@ class TestimonialsSlider extends React.Component {
 	    };
 	    return (
 	      <div className='testimonial-slider-container'>
-	      	
+
 	      	<Slider {...settings}>
-        		<div> 
+        		<div>
+        			<Testimonial image={Gaston}
+        				name='Gastón Legnani' company='Gu Trade, CTO' text={text1}
+        				/>
+    				</div>
+        		<div>
+        			<Testimonial image='http://placekitten.com/g/250/250'
+        				name='Fernando Jorge' company='Seguros Sura Uruguay, CTO' text={text1}
+        				/>
+    				</div>
+    			{/*<div>
         			<Testimonial image='http://placekitten.com/g/250/250'
         				name='Jon Doe Jr.' company='Google Inc, CTO' text={text1}
-        				/> 
+        				/>
     			</div>
-          		<div> 
+    			<div>
         			<Testimonial image='http://placekitten.com/g/250/250'
         				name='Jon Doe Jr.' company='Google Inc, CTO' text={text1}
-        				/> 
-    			</div>
-    			<div> 
-        			<Testimonial image='http://placekitten.com/g/250/250'
-        				name='Jon Doe Jr.' company='Google Inc, CTO' text={text1}
-        				/> 
-    			</div>
-    			<div> 
-        			<Testimonial image='http://placekitten.com/g/250/250'
-        				name='Jon Doe Jr.' company='Google Inc, CTO' text={text1}
-        				/> 
-    			</div>
+        				/>
+    			</div>*/}
 	        </Slider>
 	      </div>
 	    );

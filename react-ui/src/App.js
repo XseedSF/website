@@ -13,11 +13,12 @@ import Portfolio from './components/Portfolio.js';
 import TestimonialsSection from './components/Testimonials.js';
 import Team from './components/Team.js';
 import Contact from './components/Contact.js';
-
-
 import TeamPage from './components/TeamPage.js';
-
 import PortfolioPage from './components/PortfolioPage';
+
+import guTradeBg from './images/portfolio/gutrade-bg.png';
+import melanciaBg from './images/portfolio/melancia-bg.png';
+import suraBg from './images/portfolio/sura-bg.png';
 
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
@@ -40,6 +41,8 @@ const HomeApp = () => (
         <ScrollableAnchor id={'portfolio'}>
             <div>
                 <Portfolio />
+                <img src={guTradeBg} style={{ display: 'none'}}/>
+                <img src={melanciaBg} style={{ display: 'none'}}/>
                 <TestimonialsSection />
             </div>
         </ScrollableAnchor>

@@ -4,7 +4,9 @@ import PortfolioGuTrade from './PortfolioGuTrade';
 import guTradeBg from '../../images/portfolio/gutrade-bg.png';
 import guTradeLogo from '../../images/portfolio/gutrade-logo.png';
 import guTradeMockup1 from '../../images/portfolio/gutrade-mockups.png';
-import guTradeVideo from '../../videos/xseed720.mp4';
+import guTradeVideo from '../../videos/gu-trade-marketing.mp4';
+import guTradeWeb01 from '../../images/portfolio/gutrade-website01.png';
+import guTradeWeb02 from '../../images/portfolio/gutrade-website02.png';
 
 import PortfolioMelancia from './PortfolioMelancia';
 import melanciaBg from '../../images/portfolio/melancia-bg.png';
@@ -33,37 +35,42 @@ const portfolios = {
 		},
 		'infoText1': {
 			'smallTitle': 'background',
-			'title': 'A real cool title goes here',
-			'text': `GuTrade decided to team up with us after noting the need for structure inside companies with massive product sales. We took their ideas, and brought them to life.
+			'title': 'Observation to ideation',
+			'text': `Merchants have a major role in the growth of products with massive sales, for they are the employees present at the Points of Sale and get direct access to key information, which is then used by marketing and sales departments to create strategies.  All too often this information gets lost in translation, and it even takes weeks for handwritten papers to get to the right department. 
 
-Merchants have a major role in the growth of products, for they are the employees present at the Points of Sale and get access to key information, used by marketing and sales departments to create strategies.  All too often this information got lost in translation, and it even took weeks for handwritten papers to get to the right department.`,
+GuTrade decided to team up with us after noticing the need for structure inside companies with massive product sales. We took their ideas, and brought them to life.`
 		},
 		'videoUrl': guTradeVideo,
 		'infoText2': {
 			'smallTitle': 'The task',
 			'title': 'Re-thinking the old ways',
-			'text': `Our alliance brings whats important to the forefront. The biggest flaw in companies’ M.O. was present in the attainment of information regarding their products.  We decided to create a simple, reliable, and quick platform, aimed to benefit directly the merchants and the sales/marketing department, and ultimately, their products.`
+			'text': `Our alliance brings whats important to the forefront. The biggest flaw in these companies’ M.O. was present in the attainment of information in regards to their products.  We decided to create a simple, reliable, and quick platform, aimed to benefit directly the merchants, the sales/marketing department, and ultimately, their products.`
 		},
 		'bigImage1': guTradeMockup1,
 		'infoText3': {
-			'smallTitle': '????',
+			'smallTitle': 'The challenge',
 			'title': 'Who, where, what',
-			'text': `The first stage in our solution was creating a mobile app for merchants, where they can locate through GPS where the P.O.S. are, gather, and save all the information regarding their product in the moment, with or without Internet Connection. As for team leaders, or any kind of higher-ups in companies, the mobile app allows them to keep track of where their products are, and also know if they were delivered in time and place.`
+			'text': `The first stage in our solution was creating a mobile app for merchants, where they can locate where the P.O.S. are through GPS, also gather, and save all the information regarding their product in the moment, with or without Internet Connection. 
+
+UX was also a big focus for the mobile app. Most merchants aren’t familiar with complex UIs, and with an app that requires lots of information, making things easy and intuitive for them was a priority.`
 		},
 		'infoText4': {
-			'smallTitle': '????',
+			'smallTitle': 'Development',
 			'title': 'Growth & organization',
-			'text': `The second stage came as an addition and a necessity that appeared from the usage of the mobile platform.
+			'text': `The second stage came as an addition, and a necessity that surged from the usage of the mobile app. 
 
-The web app adds task management and resource optimization to GuTrade. Higher-ups in the company are now allowed to create tasks, assign routes and notes to merchants, while keeping track of their performance in all of the previous tasks.
+The web app adds task management and resource optimization to GuTrade. Higher-ups, or the people in charge of marketing the product inside the company were now allowed to create tasks, assign routes and notes to merchants, while keeping track of their overall performance in all of the previous tasks.
 
-The mobile app is also updated and expanded to interact with the desktop app, merchants are now able to receive all the things they should do in a day, straight from their managers, in a clean, straightforward and simple way.`
+The mobile app was also updated and expanded to interact with the desktop app, merchants were now able to receive all the things they should do in a day, straight from their managers, in a clean, straightforward and simple way.`
 		},
-		'bigImage2': guTradeMockup1,
+		'bigImage2': {
+			'image1': guTradeWeb01,
+			'image2': guTradeWeb02,
+		},
 		'infoText5': {
-			'smallTitle': '????',
-			'title': 'Who, where, what',
-			'text': `The last stage in the development of GuTrade is where the meat of the product really is. The two previous platforms now open a new dimension where information about the status of the product in each P.O.S. is available in real time. Processing and showing this info in a visual and understandable way is the latest layer of GuTrade, where the sales and marketing team find the biggest benefit, take action according to the status of their product with no lags, no misunderstandings, and in a simple way.`
+			'smallTitle': 'Expansion',
+			'title': 'The heart of GuTrade',
+			'text': `The last stage in development was where the meat of the product really came out. The two previous platforms opened a new dimension where information about the status of the product in each P.O.S. is available in real time. Processing and showing this info in a visual and understandable way is the latest layer of GuTrade, where the sales and marketing team find the biggest benefit, take action according to the status of their product with no lags, no misunderstandings, and in a simple way.`
 		},
 		'nextCase': {
 			'id': '2',

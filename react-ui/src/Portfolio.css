@@ -171,6 +171,23 @@
   margin-right: 25px;
 }
 
+.p-big-two-image-section-large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: initial;
+  overflow-y: hidden;
+  background-color: #f0f0f0;
+}
+
+.p-two-image-large {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 45%;
+}
+
 /**************** VIDEO SECTION **************/
 
 .p-video-section {

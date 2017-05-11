@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import proyecto from '../images/proyecto.png';
+import proyectoGu from '../images/caseGu.png';
+import proyectoMelancia from '../images/caseMelancia.png';
+import proyectoSUra from '../images/caseSura.png';
 
 const Brands = [
   { image: require('../images/clients_01.png'), id: 1 },
@@ -19,7 +22,7 @@ const Portfolio = () => (
 			<div className="portfolio-project-container p-content portfolio-project-container-left-element">
 				<Link to={'/portfolio/1'}>
 					<img className="portfolio-img"
-		     		alt="How we work" src={proyecto} draggable="false" />
+		     		alt="How we work" src={proyectoGu} draggable="false" />
 		     	<div className="p-overlay">
 		     		<h4 className="portfolio-project-name"> GuTrade - Mobile & Web App / Website </h4>
 		     	</div>
@@ -32,7 +35,7 @@ const Portfolio = () => (
 			<div className="portfolio-project-container p-content portfolio-project-container-left-element">
 				<Link to={'/portfolio/3'}>
 					<img className="portfolio-img"
-		     		alt="How we work" src={proyecto} draggable="false" />
+		     		alt="How we work" src={proyectoSUra} draggable="false" />
 		     	<div className="p-overlay">
 		     		<h4 className="portfolio-project-name"> Sura - App & Web </h4>
 		     	</div>
@@ -50,14 +53,14 @@ const Portfolio = () => (
 
 			<div id="portfolio-project-title" className="portfolio-project-container" >
 				<h1 className="portfolio-our-work"> Our Work </h1>
-				<p className="portfolio-our-work-sub">Take an in-depth look at the things</p>
-				<p className="portfolio-our-work-sub">we do and how we do them</p>
+				<p className="portfolio-our-work-sub">Digital solutions, </p>
+				<p className="portfolio-our-work-sub">created for and by humans </p>
 			</div>
 
 			<div className="portfolio-project-container p-content">
 				<Link to={'/portfolio/2'}>
 					<img className="portfolio-img"
-		     		alt="How we work" src={proyecto} draggable="false" />
+		     		alt="How we work" src={proyectoMelancia} draggable="false" />
 		     	<div className="p-overlay">
 		     		<h4 className="portfolio-project-name"> Melancia - App & Web </h4>
 	     		</div>

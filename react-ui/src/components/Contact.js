@@ -8,8 +8,8 @@ const Contact = () => (
 			<div className="contact-caption">
 				<h1 className="contact-title"> Contact us </h1>
 				<div className="contact-divider"></div>
-				<p className="contact-subtitle"> Take an in-depth look at the things we do </p>
-				<p className="contact-subtitle"> and how we do them. </p>
+				<p className="contact-subtitle"> Have a project you're interested in launching into the skies? Want to join us in our crusade for creating awesome experiences? Hit us up! </p>
+				
 			</div>
 		</div>
 		<ContactForm />	

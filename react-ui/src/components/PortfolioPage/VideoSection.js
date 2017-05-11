@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoSection = (props) => {
 	return (
-    <div id="p-video-section">
+    <div className="p-video-section">
       <div className="overlay"></div>
 
 			<video className="video" loop autoPlay muted>

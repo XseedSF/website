@@ -8,11 +8,11 @@ const Team = () => (
 			<div className="team-caption">                
                 <p className="team-bigHeader">Our team</p>
                 <p className="team-bigHeader">defines our culture</p>
-                <p className="team-smallHeader-first-line team-onlyWeb">We believe in one two three many reasons why our</p>
-                <p className="team-smallHeader team-onlyWeb">team is our most valuable asset.</p>
+                <p className="team-smallHeader-first-line team-onlyWeb">Interpersonal relationships are at the core of good collaboration, motivation, and productivity.</p>
+                <p className="team-smallHeader team-onlyWeb">This is one of the many reasons why our team is our most valuable asset.</p>
 
-                <p className="team-smallHeader-first-line team-onlyMobile">We believe in one two three many reasons</p>
-                <p className="team-smallHeader team-onlyMobile">why our team is our most valuable asset.</p>
+                <p className="team-smallHeader-first-line team-onlyMobile">Interpersonal relationships are at the core of good collaboration, motivation, and productivity. This</p>
+                <p className="team-smallHeader team-onlyMobile">is one of the many reasons why our team is our most valuable asset.</p>
 
                 <br/><br/>
                 <div className="team-button-container"> 

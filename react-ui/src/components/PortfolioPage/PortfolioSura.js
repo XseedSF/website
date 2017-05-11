@@ -13,7 +13,9 @@ const PortfolioSura = (props) => (
 		<InfoText {...props.infoText1} />
 		<BigImageSection bigImage={props.bigImage1} />
 		<InfoText {...props.infoText2} />
-		<TwoImagesSection image={props.bigImage2} />
+		<TwoImagesSection image={props.bigImage2} 
+			classCont="p-big-two-image-section"
+			classInner="p-two-image" />
 		<InfoText {...props.infoText3} />
 		<NextCase title={props.nextCase.title} link={props.nextCase.id}/>
 		<Footer />

@@ -24,7 +24,7 @@ let texts = [
 	`We work hand in hand with our clients through the creative process, identifying key inputs to ensure top-notch quality and a cutting edge solution for their business. All before writing a single line of code.`,
 	`User Interface is at the core of everything we do. It’s one of the key differentiation aspects of any strong product, and we make a quick yet thorough emphasis in drawing up wireframes, designing the graphical elements and the branding assets.`,
 	`A smooth development process is necessary to keep your project on time, as well as meeting the launch date. We regularly give progress reports as we manage the backend and frontend development of the product.`,
-	`No project goes live until everything runs smoothly. Our QA team is involved with the development process form the very beginning, making testing and debugging the entire code a swift process, and quickly reporting back to the engeneering team for any fix to be made.`,
+	`No project goes live until everything runs smoothly. Our QA team is involved with the development process from the very beginning, making testing and debugging the entire code a swift process, and quickly reporting back to the engeneering team in case any fixes have to be made.`,
 	`Launch is a critical time, and we take care every aspect, solving any road block strategically. When your project goes live and the user-base grows, we are standing by to provide any additional support your product might need. Making your business grow, is our business too.`,
 	`The only missing step is where you come in. Got doubts, questions or an amazing project you want to shoot into the skies? We want to hear from you. `];
 

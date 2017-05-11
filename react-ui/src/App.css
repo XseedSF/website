@@ -789,6 +789,9 @@ a.team-button-a, a.team-button-a:visited{
 .contact-subtitle {
   font-size: 20px;
   margin-bottom: 0;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-form {
@@ -898,6 +901,20 @@ a.team-button-a, a.team-button-a:visited{
   float: right;
 }
 
+.separator-line-cont {
+  height: 1px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 150px;
+}
+
+.separator-line-inner {
+  height: 1px;
+  width: 80%;
+  background: #353535;
+}
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #9a9999;
 }
@@ -923,11 +940,7 @@ a.team-button-a, a.team-button-a:visited{
 
 }
 
-@media (min-width: 1280px) {
-  .video {
-    width: 100%;
-    height: auto;
-  }
+@media (min-width: 1380px) {
 
   .testimonials-container {
     height: 70vh;
@@ -937,6 +950,13 @@ a.team-button-a, a.team-button-a:visited{
     height: 70vh;
   }
 }
+
+@media (min-width: 1280px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+} 
 
 
 @media (max-width: 768px) {
@@ -1277,9 +1297,7 @@ a.team-button-a, a.team-button-a:visited{
   }
 
   /******************* TESTIMONIALS 480  ************/
-  .contact-subtitle {
-    font-size: 16px;
-  }
+
 
   .testimonial-img-circle {
     width: 170px;
@@ -1364,7 +1382,7 @@ a.team-button-a, a.team-button-a:visited{
 
   /***************  CONTACT 480 **************/
   .contact-caption {
-    padding-top: 25%;
+    padding-top: 20%;
   }
 
   .contact-container {
@@ -1383,6 +1401,11 @@ a.team-button-a, a.team-button-a:visited{
 
   .contact-title, .contact-divider {
     display: none;
+  }
+
+  .contact-subtitle {
+    font-size: 16px;
+    width: 95%;
   }
 
   .contact-name {

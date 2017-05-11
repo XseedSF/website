@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 //import ReactCSSTransitionGroup from 'react-addons-transition-group';
 import ReactTimeout from 'react-timeout';
 import ReactCSSTransitionGroup from 'react/lib/ReactCSSTransitionGroup';
+import { Link } from 'react-router-dom';
 
 import img1 from '../../images/hhw_01.png';
 import img2 from '../../images/hhw_02.png';
@@ -192,7 +193,12 @@ class ProcessImage extends Component {
 		     	<ReactCSSTransitionGroup transitionName="fadeimg">
 		     		<div className="hww-text-inner" key={this.state.index}>
 				    	<h1 className="hww-text-title">{this.state.title}</h1>
-		     			<p className="hww-text-text">{this.state.text}</p>  			
+		     			<p className="hww-text-text">{this.state.text}</p> 
+              { (this.state.index === 6) &&
+                <Link className="tp-drop-mail-link" to={'/#contact'}>  
+                  <p className="tp-drop-mail">Drop us an email!</p>
+                </Link>                
+              } 			
 		     		</div>
 	     		</ReactCSSTransitionGroup>
 	     		<div className="hww-arrow-container">

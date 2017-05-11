@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Gaston from '../images/team/team-g-legnani.png';
+const textGaston = "With Xseed we are business partners from the beginning. Their extensive knowledge on Lean methodologies, made the product grow according to the needs of the client and this made it possible to monetize development effectively."
 const text1 = "I can't thank these guys enough! Their team was resposible of the creation, development, and launch of my latest app, and everything went beyond my expectations. I hope we can work again sometime soon!";
 
 const Testimonial = (props) => {
@@ -39,7 +40,7 @@ class TestimonialsSlider extends React.Component {
 	      	<Slider {...settings}>
         		<div>
         			<Testimonial image={Gaston}
-        				name='Gastón Legnani' company='Gu Trade, CTO' text={text1}
+        				name='Gastón Legnani' company='Gu Trade, CTO' text={textGaston}
         				/>
     				</div>
         		<div>

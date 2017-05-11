@@ -42,14 +42,14 @@ const Portfolio = () => (
 		    </Link>
 			</div>
 
-			<div className="portfolio-project-container p-content portfolio-project-container-left-element">
-
-					<img className="portfolio-img"
-		     		alt="How we work" src={proyecto} draggable="false" />
-		     	<div className="p-overlay">
-		     		<h4 className="portfolio-project-name"> Bimbo </h4>
-		     	</div>
-			</div>
+			{/*<div className="portfolio-project-container p-content portfolio-project-container-left-element">
+			
+								<img className="portfolio-img"
+					     		alt="How we work" src={proyecto} draggable="false" />
+					     	<div className="p-overlay">
+					     		<h4 className="portfolio-project-name"> Bimbo </h4>
+					     	</div>
+						</div>*/}
 
 			<div id="portfolio-project-title" className="portfolio-project-container" >
 				<h1 className="portfolio-our-work"> Our Work </h1>
@@ -66,13 +66,13 @@ const Portfolio = () => (
 	     		</div>
 	     	</Link>
 			</div>
-			<div className="portfolio-project-container p-content">
-				<img className="portfolio-img"
-		     		alt="How we work" src={proyecto} draggable="false" />
-		     	<div className="p-overlay">
-		     		<h4 className="portfolio-project-name"> Bimbo - App & Web </h4>
-		     	</div>
-			</div>
+			{/*<div className="portfolio-project-container p-content">
+							<img className="portfolio-img"
+					     		alt="How we work" src={proyecto} draggable="false" />
+					     	<div className="p-overlay">
+					     		<h4 className="portfolio-project-name"> Bimbo - App & Web </h4>
+					     	</div>
+						</div>*/}
 		</div>
 		<div className="clear"> </div>
 		<div className="portfolio-client-cont">

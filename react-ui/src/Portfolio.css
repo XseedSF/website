@@ -246,6 +246,7 @@
   .p-caption-subcontainer {
     width: 90%;
     height: 85%;
+    padding-left: 0;
   }
 
   .p-icon-img {
@@ -298,6 +299,17 @@
 
   .p-two-image {
     height: 90vh;
+  }
+
+  .p-big-two-image-section-large {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .p-two-image-large {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 90%;
   }
 
   /******** NEXT CASE ***********/

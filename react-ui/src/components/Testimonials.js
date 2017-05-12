@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Gaston from '../images/gaston.jpg';
+import gaston from '../images/gaston.jpg';
+import fernando from '../images/fernando.jpg';
 const textGaston = "We have been partnered with Xseed from the very beginning. Their vast knowledge on Lean methology, made the product grow according to the needs of our clients, and allowed us to make an effective monetization of development."
 const text2 = "The team at Xseed is excellent, both on a technical and professional level. They met our development standards, fitted our needs, and are always bringing innovation to our business";
 
@@ -39,12 +40,12 @@ class TestimonialsSlider extends React.Component {
 
 	      	<Slider {...settings}>
         		<div>
-        			<Testimonial image='http://placekitten.com/g/250/250'
+        			<Testimonial image={fernando}
         				name='Fernando Jorge' company='Seguros Sura Uruguay, CTO' text={text2}
         				/>
     				</div>
         		<div>
-        			<Testimonial image={Gaston}
+        			<Testimonial image={gaston}
         				name='Gastón Legnani' company='Gu Trade, CTO' text={textGaston}
         				/>
     				</div>

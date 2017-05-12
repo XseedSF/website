@@ -3,8 +3,8 @@ import TeamItem from './TeamItem';
 import {TeamItemHiring, TeamItemSocialMedias, TeamItemContact} from './TeamItemSpecials';
 
 const TeamArray = [
-  { id: 1, name: 'Jesús Portillo', role: 'Co-Founder & CTO', image: require('../../images/team/03.jpg') },
-  { id: 2, name: 'Marcelo Blanco', role: 'Co-Founder & CEO', image: require('../../images/team/03.jpg') },
+  { id: 1, name: 'Jesús Portillo', role: 'Co-Founder & CTO', image: require('../../images/team/01.jpg') },
+  { id: 2, name: 'Marcelo Blanco', role: 'Co-Founder & CEO', image: require('../../images/team/05.jpg') },
   { id: 3, name: 'Andres Goyen', role: 'COO - CIO', image: require('../../images/team/03.jpg') },
   { id: 9, name: 'Joaquin Mut', role: 'CFO', image: require('../../images/team/03.jpg') },
   { id: 4, name: 'Diego Cáceres', role: 'Tech Lead', image: require('../../images/team/03.jpg') },
@@ -18,10 +18,10 @@ const TeamArray = [
   { id: 120, name: 'Hiring' },
   { id: 17, name: 'Gonzalo Castro', role: 'Banking and Finance Developer', image: require('../../images/team/03.jpg') },
   { id: 18, name: 'Santiago Rivero', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/03.jpg') },
-  { id: 12, name: 'Fiorella Ichkhanian', role: 'International Sales Manager', image: require('../../images/team/03.jpg') },
+  { id: 12, name: 'Fiorella Ichkhanian', role: 'International Sales Manager', image: require('../../images/team/04.jpg') },
   { id: 15, name: 'Gabriela Flores', role: 'Sales Executive', image: require('../../images/team/03.jpg') },
   { id: 10, name: 'Dayana Bakerdjian', role: 'Quality Asurance', image: require('../../images/team/03.jpg') },
-  { id: 11, name: 'Luis Moreno', role: 'Quality Asurance', image: require('../../images/team/03.jpg') },
+  { id: 11, name: 'Luis Moreno', role: 'Quality Asurance', image: require('../../images/team/02.jpg') },
   { id: 21, name: 'Sofia Schoepf', role: 'Quality Asurance', image: require('../../images/team/03.jpg') },
   { id: 180, name: 'Hiring' }
   // { id: 19, name: 'Pablo Revetria', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/team-p-revetria.png') },

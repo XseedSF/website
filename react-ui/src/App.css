@@ -799,6 +799,7 @@ a.team-button-a, a.team-button-a:visited{
   width: 430px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
 }
 
 .contact-name {

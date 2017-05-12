@@ -449,4 +449,12 @@ a.team-contact-a, a.team-contact-a:visited{
     color: #90e7b2;
     font-family: 'DINPro-Light';
   }
+
+  .flex-item {
+    height: auto;
+  }
+
+  .team-img {
+    height: auto;
+  }
 }

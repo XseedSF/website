@@ -1,6 +1,7 @@
 const express = require('express');
 var nodemailer = require("nodemailer");
 const path = require('path');
+var config = require('./config');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -16,8 +17,8 @@ var smtpTransport = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",
   auth: {
-    user: "website@xseed.com.uy",
-    pass: "websiteP@ssword2016"
+    user: config.mail_user,
+    pass: config.mail_pass
   }
 });
 
@@ -31,17 +32,17 @@ app.get('/api', function (req, res) {
 
 app.get('/send',function(req,res){
 
-  var mailText = `Contacto del usuario, 
-  Nombre: ${req.query.name} 
-  Mail: ${req.query.mail} 
+  var mailText = `Contacto del usuario,
+  Nombre: ${req.query.name}
+  Mail: ${req.query.mail}
   Mensaje: ${req.query.text}`;
-  
+
   var mailOptions={
     to : 'dcaceres@xseed.com.uy',
     subject : req.query.subject,
     text : mailText
   }
-  
+
   console.log(mailOptions);
   smtpTransport.sendMail(mailOptions, function(error, response){
     if(error){

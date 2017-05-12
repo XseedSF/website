@@ -4,8 +4,8 @@ const TeamItem = (props) => (
     <div className="flex-item">
 
     	<div className="team-item-container team-content">
-			<img className="team-img" 
-	     		alt="How we work" src={props.image} draggable="false" />
+			<img className="team-img"
+	     		alt={props.name} src={props.image} draggable="false" />
 	     	<div className="team-overlay">
 	     		<div className="team-member-badge">
 	     			<p className="team-member-name"> {props.name} </p>

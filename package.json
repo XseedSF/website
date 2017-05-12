@@ -7,7 +7,6 @@
   },
   "scripts": {
     "start": "node ../server/index.js", 
-    "runlocal": "node ./server/index.js",
     "postinstall": "cd ./react-ui && npm install --dev && npm run build"
   },
   "cacheDirectories": [

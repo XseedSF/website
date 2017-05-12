@@ -1,7 +1,6 @@
 const express = require('express');
 var nodemailer = require("nodemailer");
 const path = require('path');
-var config = require('./config');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -17,8 +16,8 @@ var smtpTransport = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",
   auth: {
-    user: config.mail_user,
-    pass: config.mail_pass
+    user: "website@xseed.com.uy",
+    pass: "websiteP@ssword2016"
   }
 });
 

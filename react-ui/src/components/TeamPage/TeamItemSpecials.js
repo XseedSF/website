@@ -6,18 +6,20 @@ import twitter from '../../images/tm-tw.png';
 import instagram from '../../images/tm-ig.png';
 
 export const TeamItemHiring = (props) => (
-	<div className="flex-item flex-item-hiring">
-    	<div className="team-item-container team-content team-item-hiring">
+	<div className="flex-item flex-item-hiring">		
+  	<div className="team-item-container team-content team-item-hiring">
+
 			<div className="team-text-hiring">
 				{`We're always on the hunt for new talent!`}
 			</div>
-	     	<div className="team-text-hiring-button-cont">
-	     		<Link className="team-work-with-us-a" to={'/#contact'} onClick={() => window.scrollTo(0, 0)}>
-                    <span className="team-work-with-us"> JOIN US! </span>
-                </Link>
-	     	</div>
+     	<div className="team-text-hiring-button-cont">
+     		<Link className="team-work-with-us-a" to={'/#contact'} onClick={() => window.scrollTo(0, 0)}>
+                  <span className="team-work-with-us"> JOIN US! </span>
+              </Link>
+     	</div>
+
 		</div>
-    </div>
+  </div>
 )
 
 export const TeamItemSocialMedias = (props) => (

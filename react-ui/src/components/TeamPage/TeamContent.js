@@ -11,11 +11,11 @@ const TeamArray = [
   { id: 5, name: 'Federico Sobral', role: 'Tech Lead', image: require('../../images/team/03.jpg') },
   { id: 8, name: 'Natalia Calle', role: 'Mobile Developer', image: require('../../images/team/03.jpg') },
   { id: 7, name: 'Matías Piñeiro', role: 'Web & Mobile Developer', image: require('../../images/team/03.jpg') },
-  { id: 80, name: 'Hiring' },
+  { id: 80, name: 'Hiring', image: require('../../images/team/01.jpg') },
   { id: 6, name: 'Nicolás Romeou', role: 'Web Developer', image: require('../../images/team/03.jpg') },
   { id: 14, name: 'Pablo Corso', role: 'Web Developer', image: require('../../images/team/03.jpg') },
   { id: 16, name: 'Matías Corso', role: 'Web Developer', image: require('../../images/team/03.jpg') },
-  { id: 120, name: 'Hiring' },
+  { id: 120, name: 'Media', image: require('../../images/team/01.jpg') },
   { id: 17, name: 'Gonzalo Castro', role: 'Banking and Finance Developer', image: require('../../images/team/03.jpg') },
   { id: 18, name: 'Santiago Rivero', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/03.jpg') },
   { id: 12, name: 'Fiorella Ichkhanian', role: 'International Sales Manager', image: require('../../images/team/04.jpg') },
@@ -23,7 +23,7 @@ const TeamArray = [
   { id: 10, name: 'Dayana Bakerdjian', role: 'Quality Asurance', image: require('../../images/team/03.jpg') },
   { id: 11, name: 'Luis Moreno', role: 'Quality Asurance', image: require('../../images/team/02.jpg') },
   { id: 21, name: 'Sofia Schoepf', role: 'Quality Asurance', image: require('../../images/team/03.jpg') },
-  { id: 180, name: 'Hiring' }
+  { id: 180, name: 'Contact', image: require('../../images/team/01.jpg') }
   // { id: 19, name: 'Pablo Revetria', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/team-p-revetria.png') },
   // { id: 20, name: 'Federico Sendra', role: 'Mobile Developer', image: require('../../images/team/team-f-sendra.png') },
   // { id: 13, name: 'Gastón Legnani', role: 'Tech Lead', image: require('../../images/team/team-g-legnani.png') },

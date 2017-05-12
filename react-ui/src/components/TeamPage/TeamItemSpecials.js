@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import facebook from '../../images/fb.png';
-import twitter from '../../images/tw.png';
-import instagram from '../../images/ig.png';
+import facebook from '../../images/tm-fb.png';
+import twitter from '../../images/tm-tw.png';
+import instagram from '../../images/tm-ig.png';
 
 export const TeamItemHiring = (props) => (
 	<div className="flex-item flex-item-hiring">

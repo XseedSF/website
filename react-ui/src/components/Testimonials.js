@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Gaston from '../images/team/team-g-legnani.png';
-const textGaston = "With Xseed we are business partners from the beginning. Their extensive knowledge on Lean methodologies, made the product grow according to the needs of the client and this made it possible to monetize development effectively."
-const text1 = "I can't thank these guys enough! Their team was resposible of the creation, development, and launch of my latest app, and everything went beyond my expectations. I hope we can work again sometime soon!";
+const textGaston = "We have been partnered with Xseed from the very beginning. Their vast knowledge on Lean methology, made the product grow according to the needs of our clients, and allowed us to make an effective monetization of development."
+const text2 = "The team at Xseed is excellent, both on a technical and professional level. They met our development standards, fitted our needs, and are always bringing innovation to our business";
 
 const Testimonial = (props) => {
 	return (
@@ -39,15 +39,15 @@ class TestimonialsSlider extends React.Component {
 
 	      	<Slider {...settings}>
         		<div>
-        			<Testimonial image={Gaston}
-        				name='Gastón Legnani' company='Gu Trade, CTO' text={textGaston}
+        			<Testimonial image='http://placekitten.com/g/250/250'
+        				name='Fernando Jorge' company='Seguros Sura Uruguay, CTO' text={text2}
         				/>
     				</div>
         		<div>
-        			<Testimonial image='http://placekitten.com/g/250/250'
-        				name='Fernando Jorge' company='Seguros Sura Uruguay, CTO' text={text1}
+        			<Testimonial image={Gaston}
+        				name='Gastón Legnani' company='Gu Trade, CTO' text={textGaston}
         				/>
-    				</div>
+    				</div>        		
     			{/*<div>
         			<Testimonial image='http://placekitten.com/g/250/250'
         				name='Jon Doe Jr.' company='Google Inc, CTO' text={text1}

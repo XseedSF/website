@@ -414,6 +414,7 @@ a.work-with-us-a, a.work-with-us-a:visited{
   margin-right: 25px;
   margin-left: 25px;
   position: relative;
+  z-index: 1;
 }
 
 .portfolio-project-container-left-element {

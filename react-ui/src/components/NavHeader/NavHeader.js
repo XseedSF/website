@@ -48,7 +48,7 @@ class NavHeader extends Component {
         <Navbar  collapseOnSelect={true} staticTop={true} onToggle={toggleCallback}>
           <Navbar.Header>
             <Navbar.Brand >
-              <a href="#home">
+              <a href={homeLink}>
                 <img className="navBrandImage" alt="Xseed logo" src={logo} draggable="false" />
               </a>
             </Navbar.Brand>

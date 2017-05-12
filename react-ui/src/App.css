@@ -768,7 +768,7 @@ a.team-button-a, a.team-button-a:visited{
 .contact-container-caption {
   color: grey;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .contact-divider {
@@ -1392,7 +1392,7 @@ a.team-button-a, a.team-button-a:visited{
 
   /***************  CONTACT 480 **************/
   .contact-caption {
-    padding-top: 20%;
+    padding-top: 10%;
   }
 
   .contact-container {

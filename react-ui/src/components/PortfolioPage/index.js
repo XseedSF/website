@@ -83,33 +83,29 @@ The mobile app was also updated and expanded to interact with the desktop app, m
 			'iconImage': melanciaLogo,
 			'background': melanciaBg,
 			'name': 'Melancia',
-			'title': 'Life quality',
-			'title2': 'improved & ensured.',
+			'title': 'The mall experience,',
+			'title2': 'renewed',
 			'subtitle': 'App / Website',
-			'description': 'In 2014 we participated in the creation of a new platfomr meant to transform the way corporations distribute, locate, and merchandise products with massive sales.',
+			'description': 'Melancia Mall opened its doors in 2015 for the first time. Located in the frontier of Rivera, Uruguay and Brazil, Melancia teamed up with Xseed to make travelers shopping experience smooth unlike any other.',
 		},
 		'infoText1': {
 			'smallTitle': 'background',
-			'title': 'A real cool title goes here',
-			'text': `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sem orci, aliquet non mauris pretium, faucibus viverra purus. Praesent faucibus, neque at suscipit ullamcorper, nulla arcu volutpat mauris, ac ornare libero ligula maximus ligula. Vestibulum non orci nibh. Aenean non libero nibh. Nulla auctor diam placerat auctor dictum. Morbi dolor sapien, consequat ut mi sed, condimentum vestibulum orci. Praesent elit enim, pretium nec elementum nec, commodo sed quam. Nullam eleifend condimentum risus ut viverra. Fusce tincidunt bibendum mi eget convallis. Nulla facilisi. Vestibulum sagittis, nisl a rhoncus dignissim, lacus tortor scelerisque felis, nec tincidunt nibh ligula vitae justo. Aenean a lacus tortor. Integer non diam ut mauris mollis porta eget sed sem. Donec nec sodales metus. Suspendisse id justo tristique, ornare mauris ac, luctus turpis.
-
-Aliquam erat volutpat. Nunc sed sem eget lorem facilisis bibendum. Etiam a nulla porttitor, fringilla turpis in, aliquam erat. Mauris non tellus augue. Integer ultricies sed mauris vel rhoncus. Aenean tincidunt enim at congue venenatis. Proin faucibus mollis arcu, id elementum mi imperdiet nec. Etiam vitae ultrices urna.`,
+			'title': 'An unusual mall',
+			'text': `Melancia’s main purpose is serving those who travel from Brazil’s frontier to Uruguay, bringing top quality stores with prices that are equal to any other tax free shop. Unlike most of the malls, Melancia’s clients don’t hang around for long, and most of their purchases don’t come from compulsive buyers, rather than specific, unique things that are found only in their stores. This is the main reason they decided to team up with us, to make the experience of buying here a lot faster and concise.`,
 		},
 		'bigImage1': melanciaMockup1,
 		'infoText2': {
 			'smallTitle': 'the task',
-			'title': 'A real cool title goes here',
-			'text': `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sem orci, aliquet non mauris pretium, faucibus viverra purus. Praesent faucibus, neque at suscipit ullamcorper, nulla arcu volutpat mauris, ac ornare libero ligula maximus ligula. Vestibulum non orci nibh. Aenean non libero nibh. Nulla auctor diam placerat auctor dictum. Morbi dolor sapien, consequat ut mi sed, condimentum vestibulum orci. Praesent elit enim, pretium nec elementum nec, commodo sed quam. Nullam eleifend condimentum risus ut viverra. Fusce tincidunt bibendum mi eget convallis. Nulla facilisi. Vestibulum sagittis, nisl a rhoncus dignissim, lacus tortor scelerisque felis, nec tincidunt nibh ligula vitae justo. Aenean a lacus tortor. Integer non diam ut mauris mollis porta eget sed sem. Donec nec sodales metus. Suspendisse id justo tristique, ornare mauris ac, luctus turpis.
+			'title': 'Location, location, location',
+			'text': `The mobile app is the solution we decided was best for the mall. The main feature within the app is the map. Designed to locate the user, the store he/she’s looking for, and tracing the quickest route for them to get as fast as possible to the store, without losing time.
 
-Aliquam erat volutpat. Nunc sed sem eget lorem facilisis bibendum. Etiam a nulla porttitor, fringilla turpis in, aliquam erat. Mauris non tellus augue. Integer ultricies sed mauris vel rhoncus. Aenean tincidunt enim at congue venenatis. Proin faucibus mollis arcu, id elementum mi imperdiet nec. Etiam vitae ultrices urna.`,
+Another feature within the app is the store list. Every store gets its unique space for a description, picture, and also news, such as discounts or new products inside their catalogue, keeping every user informed of any information they might find useful.`,
 		},
 		'bigImage2': melanciaMockup2,
 		'infoText3': {
-			'smallTitle': 'mobile',
-			'title': 'Moving from gathering to optimizing',
-			'text': `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sem orci, aliquet non mauris pretium, faucibus viverra purus. Praesent faucibus, neque at suscipit ullamcorper, nulla arcu volutpat mauris, ac ornare libero ligula maximus ligula. Vestibulum non orci nibh. Aenean non libero nibh. Nulla auctor diam placerat auctor dictum. Morbi dolor sapien, consequat ut mi sed, condimentum vestibulum orci. Praesent elit enim, pretium nec elementum nec, commodo sed quam. Nullam eleifend condimentum risus ut viverra. Fusce tincidunt bibendum mi eget convallis. Nulla facilisi. Vestibulum sagittis, nisl a rhoncus dignissim, lacus tortor scelerisque felis, nec tincidunt nibh ligula vitae justo. Aenean a lacus tortor. Integer non diam ut mauris mollis porta eget sed sem. Donec nec sodales metus. Suspendisse id justo tristique, ornare mauris ac, luctus turpis.
-
-Aliquam erat volutpat. Nunc sed sem eget lorem facilisis bibendum. Etiam a nulla porttitor, fringilla turpis in, aliquam erat. Mauris non tellus augue. Integer ultricies sed mauris vel rhoncus. Aenean tincidunt enim at congue venenatis. Proin faucibus mollis arcu, id elementum mi imperdiet nec. Etiam vitae ultrices urna.`,
+			'smallTitle': 'The challenge',
+			'title': 'Fluidity and transformation',
+			'text': `Malls usually change structure all the time, new stores open, spaces are divided or new ones are added. Melancia, being a recent one, is used to changing and expanding, and so, the biggest challenge we faced in terms of development, was keeping the map’s structure fluid and updated, with proper coordinates, so the tracing system would work efficiently in real time.`,
 		},
 		'nextCase': {
 			'id': '3',

@@ -874,6 +874,15 @@ a.team-button-a, a.team-button-a:visited{
   float: right;
 }
 
+.contact-catcha-cont {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contact-catcha {
+  justify-content: flex-end;
+  display: flex;
+}
 /******************** FOOTER ***********************/
 
 .footer-medias-mobile {
@@ -957,7 +966,7 @@ a.team-button-a, a.team-button-a:visited{
     width: 100%;
     height: auto;
   }
-} 
+}
 
 
 @media (max-width: 768px) {
@@ -1472,5 +1481,14 @@ a.team-button-a, a.team-button-a:visited{
 
   a.footer-media-link, a.footer-media-link:visited{
     text-decoration: none;
+  }
+
+  /***** OTHERS ***/
+  .separator-line-cont {
+    padding-left: 0px;
+  }
+
+  .separator-line-inner {
+    width: 100%;
   }
 }

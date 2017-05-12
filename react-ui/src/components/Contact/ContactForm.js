@@ -24,7 +24,7 @@ class ContactForm extends Component {
     const name = target.name;
     this.setState({
       [name]: value
-    });    
+    });
   }
 
   handleSubmit(event) {
@@ -39,15 +39,15 @@ class ContactForm extends Component {
     console.log('handleSubmit');
     this.setState({sending: true});
     sendEmail(this.state.name, this.state.email, this.state.message, (res) => {
- 
+
       this.setState({sending: false});
       if(res.error)
         console.log('Email not sent: ', res.error);
       else if(res.data) {
         console.log('Email sent: ', res.data);
-        this.setState({ 
-          name: '', 
-          email: '', 
+        this.setState({
+          name: '',
+          email: '',
           message: '',
           successMessage: 'Message sent correctly!'
         });
@@ -56,7 +56,7 @@ class ContactForm extends Component {
       }
     });
 
-    
+
   }
 
   validation() {
@@ -65,7 +65,7 @@ class ContactForm extends Component {
         console.log('mail invalido');
         this.setState({errorMessage: 'Mail format is invalid'});
       }
-      else 
+      else
         return true;
     }
     else {
@@ -96,30 +96,34 @@ class ContactForm extends Component {
     const sendClassName = !this.state.sending ? 'contact-send-button' : 'contact-send-button disabled';
     return (
       <form className="contact-form" onSubmit={this.handleSubmit}>
-        <div className="contact-name">          
-          <input className="contact-input-text" 
-            placeholder="Name" 
-            name="name" type="text" 
-            value={this.state.name} 
+        <div className="contact-name">
+          <input className="contact-input-text"
+            placeholder="Name"
+            name="name" type="text"
+            value={this.state.name} required
             onChange={this.handleInputChange} />
         </div>
-        <div className="contact-email">          
+        <div className="contact-email">
           <input className="contact-input-text"
-            placeholder="e-mail" 
-            name="email" type="email" 
+            placeholder="e-mail"
+            name="email" type="email"
             value={this.state.email} required
             onChange={this.handleInputChange} />
         </div>
-        <div className="contact-message">          
+        <div className="contact-message">
           <textarea className="contact-textarea"
-            placeholder="Your Message" 
-            name="message" 
+            placeholder="Your Message"
+            name="message"
             value={this.state.message} required
             onChange={this.handleInputChange} />
         </div>
+        <div className="contact-catcha-cont">
+          <div className="g-recaptcha contact-catcha"
+            data-sitekey="6LdodxcUAAAAAI4czo4PbQ1HkXVGNQ0YeIte76xv"></div>
+        </div>
         <div className="contact-button-container" >
-          <input className={sendClassName} 
-            type="submit" 
+          <input className={sendClassName}
+            type="submit"
             disabled={this.state.sending}
             value={ this.state.sending ? 'Sending' : 'Send'} />
         </div>

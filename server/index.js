@@ -14,7 +14,7 @@ app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
     STMP is mail server which is responsible for sending and recieving email.
 */
 //Comentar
-const config = {};
+var config = {};
 config.mail_user = "dummy";
 config.mail_pass = "dummy";
 

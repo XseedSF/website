@@ -1,7 +1,7 @@
 const express = require('express');
 var nodemailer = require("nodemailer");
 const path = require('path');
-const config = require('./config');
+//const config = require('./config');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -13,6 +13,11 @@ app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
     Here we are configuring our SMTP Server details.
     STMP is mail server which is responsible for sending and recieving email.
 */
+//Comentar
+const config = {};
+config.mail_user = "dummy";
+config.mail_pass = "dummy";
+
 var smtpTransport = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",

@@ -2,6 +2,7 @@ import React from 'react';
 import TeamItem from './TeamItem';
 import {TeamItemHiring, TeamItemSocialMedias, TeamItemContact} from './TeamItemSpecials';
 
+//Info of Team and photos
 const TeamArray = [
   { id: 1, name: 'Jesús Portillo', role: 'Co-Founder & CTO', image: require('../../images/team/01.jpg') },
   { id: 2, name: 'Marcelo Blanco', role: 'Co-Founder & CEO', image: require('../../images/team/05.jpg') },
@@ -23,7 +24,7 @@ const TeamArray = [
   { id: 10, name: 'Dayana Bakerdjian', role: 'Quality Asurance', image: require('../../images/team/07.jpg') },
   { id: 11, name: 'Luis Moreno', role: 'Quality Asurance', image: require('../../images/team/02.jpg') },
   { id: 21, name: 'Sofia Schoepf', role: 'Quality Asurance', image: require('../../images/team/11.jpg') },
-  { id: 180, name: 'Contact', image: require('../../images/team/01.jpg') }
+  { id: 180, name: 'Contact', image: require('../../images/team/02.jpg') }
   // { id: 19, name: 'Pablo Revetria', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/team-p-revetria.png') },
   // { id: 20, name: 'Federico Sendra', role: 'Mobile Developer', image: require('../../images/team/team-f-sendra.png') },
   // { id: 13, name: 'Gastón Legnani', role: 'Tech Lead', image: require('../../images/team/team-g-legnani.png') },

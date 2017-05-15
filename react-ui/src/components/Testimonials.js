@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import gaston from '../images/gaston.jpg';
 import fernando from '../images/fernando.jpg';
-const textGaston = "We have been partnered with Xseed from the very beginning. Their vast knowledge on Lean methodology, made the product grow according to the needs of our clients, and allowed us to make an effective monetization of development."
+const textGaston = "We've been partners with Xseed from the very beginning. Their vast knowledge on Lean methodology, made the product grow according to the needs of our clients, and allowed us to make an effective monetization of development."
 const text2 = "The team at Xseed is excellent, both on a technical and professional level. They met our development standards, fitted our needs, and are always bringing innovation to our business";
 
 const Testimonial = (props) => {

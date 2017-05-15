@@ -21,9 +21,9 @@ const TeamArray = [
   { id: 18, name: 'Santiago Rivero', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/03.jpg') },
   { id: 12, name: 'Fiorella Ichkhanian', role: 'International Sales Manager', image: require('../../images/team/04.jpg') },
   { id: 15, name: 'Gabriela Flores', role: 'Sales Executive', image: require('../../images/team/16.jpg') },
-  { id: 10, name: 'Dayana Bakerdjian', role: 'Quality Asurance', image: require('../../images/team/07.jpg') },
-  { id: 11, name: 'Luis Moreno', role: 'Quality Asurance', image: require('../../images/team/02.jpg') },
-  { id: 21, name: 'Sofia Schoepf', role: 'Quality Asurance', image: require('../../images/team/11.jpg') },
+  { id: 10, name: 'Dayana Bakerdjian', role: 'Quality Assurance', image: require('../../images/team/07.jpg') },
+  { id: 11, name: 'Luis Moreno', role: 'Quality Assurance', image: require('../../images/team/02.jpg') },
+  { id: 21, name: 'Sofia Schoepf', role: 'Quality Assurance', image: require('../../images/team/11.jpg') },
   { id: 180, name: 'Contact', image: require('../../images/team/02.jpg') }
   // { id: 19, name: 'Pablo Revetria', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/team-p-revetria.png') },
   // { id: 20, name: 'Federico Sendra', role: 'Mobile Developer', image: require('../../images/team/team-f-sendra.png') },

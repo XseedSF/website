@@ -16,7 +16,10 @@ app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
 //Comentar
 /*var config = {};
 config.mail_user = "dummy";
-config.mail_pass = "dummy";*/
+config.mail_pass = "dummy";
+
+
+*/
 
 var smtpTransport = nodemailer.createTransport({
   service: "gmail",

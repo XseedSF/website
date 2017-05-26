@@ -2,6 +2,7 @@ const express = require('express');
 var nodemailer = require("nodemailer");
 const path = require('path');
 const config = require('./config');
+//import request from 'request';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -73,3 +74,30 @@ app.get('*', function(request, response) {
 app.listen(PORT, function () {
   console.log(`Listening on port ${PORT}`);
 });
+
+// function verifyHumanity(req) {
+//   // Q is a nice little promise library I'm using in my project
+//   const d = Q.defer();
+//   const recaptchaResponse = req.body['g-recaptcha-response'];
+//
+//   request.post('https://www.google.com/recaptcha/api/siteverify', {
+//     form: {
+//       secret: RECAPTCHA_SECRET_KEY,
+//       response: recaptchaResponse,
+//       remoteip: req.connection.remoteAddress
+//     }
+//   }, (err, httpResponse, body)=>{
+//     if(err) {
+//       d.reject(new Error(err));
+//     } else {
+//       const r = JSON.parse(body);
+//       if (r.success) {
+//         d.resolve(r.success);
+//       } else {
+//         d.reject(new Error());
+//       }
+//     }
+//   });
+//
+//   return d.promise;
+// }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {sendEmail} from './api.js';
 import ReactTimeout from 'react-timeout';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 class ContactForm extends Component {
   constructor(props) {
@@ -18,6 +19,13 @@ class ContactForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  onChange(response) {
+    this.setState({
+      'g-recaptcha-response': response,
+      errorMessage: ''
+    });
+  }
+
   handleInputChange (event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -28,6 +36,7 @@ class ContactForm extends Component {
   }
 
   handleSubmit(event) {
+
     event.preventDefault();
     if(this.state.sending)
       return;
@@ -44,14 +53,15 @@ class ContactForm extends Component {
       if(res.error)
         console.log('Email not sent: ', res.error);
       else if(res.data) {
-        console.log('Email sent: ', res.data);
+        console.log('Email sent: ', res.data);        
         this.setState({
           name: '',
           email: '',
           message: '',
+          'g-recaptcha-response': null,
           successMessage: 'Message sent correctly!'
         });
-
+        this.captcha.reset();
         this.props.setTimeout(() => this.setState({successMessage: ''}), 2000);
       }
     });
@@ -60,7 +70,7 @@ class ContactForm extends Component {
   }
 
   validation() {
-    if(this.state.email !== '' && this.state.name !== '' && this.state.message !== '') {
+    if(this.state.email !== '' && this.state.name !== '' && this.state.message !== '' && this.state['g-recaptcha-response']) {
       if(!this.validateEmail(this.state.email)) {
         console.log('mail invalido');
         this.setState({errorMessage: 'Mail format is invalid'});
@@ -81,7 +91,10 @@ class ContactForm extends Component {
         console.log('Debe completar el message');
         this.setState({errorMessage: 'Message can\'t be empty'});
       }
-
+      else if(!this.state['g-recaptcha-response']) {
+        console.log('Debe demostrar que es humano');
+        this.setState({errorMessage: 'You need to prove that you\'re human'});
+      }
       return false;
     }
   }
@@ -118,8 +131,12 @@ class ContactForm extends Component {
             onChange={this.handleInputChange} />
         </div>
         <div className="contact-catcha-cont">
-          <div className="g-recaptcha contact-catcha"
-            data-sitekey="6LdodxcUAAAAAI4czo4PbQ1HkXVGNQ0YeIte76xv"></div>
+          <ReCAPTCHA
+            ref="recaptcha"
+            ref={(el) => { this.captcha = el; }}
+            sitekey="6LdodxcUAAAAAI4czo4PbQ1HkXVGNQ0YeIte76xv"
+            onChange={this.onChange.bind(this)}/>
+
         </div>
         <div className="contact-button-container" >
           <input className={sendClassName}

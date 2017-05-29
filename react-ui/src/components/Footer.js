@@ -11,7 +11,7 @@ const Footer = (props) => {
 			<div className="container">
 				<div className="footer-xseed">
 					<p> © {year} XseedIT Solutions </p>
-					<p> 1355 Market St suite 488 SF CA 94103 </p>
+					<p> 1355 Market St suite 488 San Francisco CA 94103 </p>
 				</div>
 				<div className="footer-medias">
 					<a href="https://www.facebook.com/xseeditsolutions/" target="_blank" >

@@ -47,7 +47,7 @@ app.get('/send',function(req,res){
   Mensaje: ${req.query.text}`;
 
   var mailOptions={
-    to : 'dcaceres@xseed.com.uy',
+    to : 'hello@xseedsf.com',
     subject : req.query.subject,
     text : mailText
   }

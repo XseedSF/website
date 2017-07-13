@@ -20,16 +20,16 @@ class NavHeader extends Component {
     } else {
       if (this.props.onSelect) {
         this.props.onSelect(this.props.eventKey, e);
-      }      
+      }
     }
   }
 
   render() {
 
-    const { 
-      homeLink, 
-      hwwLink, 
-      portfolioLink, 
+    const {
+      homeLink,
+      hwwLink,
+      portfolioLink,
       teamLink,
       contactUsLink
     } = this.props;
@@ -43,8 +43,8 @@ class NavHeader extends Component {
         this.setState({ toggleClassName: 'hamburger hamburger--collapse' });
     };
 
-    return (   
-      <Headroom>   
+    return (
+      <Headroom>
         <Navbar  collapseOnSelect={true} staticTop={true} onToggle={toggleCallback}>
           <Navbar.Header>
             <Navbar.Brand >
@@ -53,28 +53,28 @@ class NavHeader extends Component {
               </a>
             </Navbar.Brand>
             <Navbar.Toggle className={this.state.toggleClassName} type="button" >
-             
+
                 <span className="hamburger-box">
                   <span className="hamburger-inner"></span>
-                </span> 
+                </span>
             </Navbar.Toggle>
           </Navbar.Header>
-          <Navbar.Collapse  >      
+          <Navbar.Collapse  >
             <Nav pullRight>
               <NavItem href={homeLink} >
-                <span className="navItem">Home</span> 
-              </NavItem>              
+                <span className="navItem">Home</span>
+              </NavItem>
               <NavItem href={hwwLink}>
-                <span className="navItem">How we work</span> 
+                <span className="navItem">Our process</span>
               </NavItem>
               <NavItem href={portfolioLink}>
-                <span className="navItem">Portfolio</span>
+                <span className="navItem">Examples of Work</span>
               </NavItem>
               <NavItem href={teamLink}>
-                <span className="navItem">Team</span> 
+                <span className="navItem">Team</span>
               </NavItem>
               <NavItem href={contactUsLink}>
-                <span className="navItem">Contact us</span> 
+                <span className="navItem">Contact us</span>
               </NavItem>
             </Nav>
           </Navbar.Collapse>

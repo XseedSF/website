@@ -10,7 +10,7 @@ export const TeamItemHiring = (props) => (
   	<div className="team-item-container team-content team-item-hiring">
 
 			<div className="team-text-hiring">
-				{`We're always on the hunt for new talent!`}
+				{`We're always on the hunt for new talents!`}
 			</div>
      	<div className="team-text-hiring-button-cont">
      		<Link className="team-work-with-us-a" to={'/#contact'} onClick={() => window.scrollTo(0, 0)}>

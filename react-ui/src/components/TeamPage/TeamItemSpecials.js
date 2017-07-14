@@ -29,11 +29,11 @@ export const TeamItemSocialMedias = (props) => (
 				Take the inside scoop!
 			</div>
 	     	<div className="team-text-social-links">
-				<a href="https://www.facebook.com/xseeditsolutions/" target="_blank" >
+				<a href="https://www.facebook.com/xseedsf/" target="_blank" >
 					<img className="tp-f-icon-img" alt="facebook" src={facebook} draggable="false" />
 				</a>
 
-        <a href="https://www.instagram.com/xseedsf/" target="_blank" >
+        <a href="https://www.instagram.com/xseed.io/" target="_blank" >
 					<img className="tp-f-icon-img" alt="instagram" src={instagram} draggable="false" />
 				</a>
 

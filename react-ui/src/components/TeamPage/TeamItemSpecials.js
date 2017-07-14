@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import facebook from '../../images/tm-fb.png';
 import twitter from '../../images/tm-tw.png';
 import instagram from '../../images/tm-ig.png';
-import linkedin from '../../images/tm-link.png';
 
 export const TeamItemHiring = (props) => (
 	<div className="flex-item flex-item-hiring">
@@ -42,9 +41,6 @@ export const TeamItemSocialMedias = (props) => (
 					<img className="tp-f-icon-img" alt="twitter" src={twitter} draggable="false" />
 				</a>
 
-				<a href="https://www.linkedin.com/company-beta/936817/" target="_blank" >
-					<img className="tp-f-icon-img" alt="linkedin" src={linkedin} draggable="false" />
-				</a>
 			</div>
 		</div>
     </div>

@@ -11,7 +11,7 @@ const Footer = (props) => {
 		<div className="footer">
 			<div className="container">
 				<div className="footer-xseed">
-					<p> © {year} XseedIT Solutions </p>
+					<p> © {year} Xseed Solutions </p>
 					<p> 1355 Market St suite 488 San Francisco CA 94103 </p>
 				</div>
 				<div className="footer-medias">

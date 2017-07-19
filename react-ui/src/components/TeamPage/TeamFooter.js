@@ -11,7 +11,7 @@ const TeamFooter = (props) => {
 		<div className="footer">
 			<div className="container">
 				<div className="tp-footer-xseed">
-					<p> © {year} XseedIT Solutions </p>
+					<p> © {year} Xseed Solutions </p>
 				</div>
 				<div className="footer-medias">
 					<a href="https://www.facebook.com/xseedsf/" target="_blank" >

@@ -1,11 +1,8 @@
-
 .p-header-container {
-
   width: 100%;
   height: 95vh;
   min-height: 650px;
-  background-color: white;/*#f0f0f0;*/
-
+  background-color: white; /*#f0f0f0;*/
 }
 
 .p-caption-container {
@@ -25,7 +22,7 @@
   top: 0px;
 
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
   justify-content: flex-end;
 }
 
@@ -41,9 +38,9 @@
 .p-caption-subcontainer {
   width: 70%;
   padding-left: 150px;
-	height: 70%;
-	margin-left: auto;
-	margin-right: auto;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 1;
 }
 
@@ -66,16 +63,16 @@
 }
 
 .p-header-subtitle {
-	font-family: 'DINPro-Bold';
-	font-size: 12px;
-	margin-top: 50px;
-	margin-bottom: 20px;
+  font-family: 'DINPro-Bold';
+  font-size: 12px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .p-description {
   font-size: 18px;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .p-team-content {
@@ -85,21 +82,20 @@
 /************* INFO TEXT ***************/
 
 .p-info-text-container {
-	width: 70%;
-	/*height: 70vh;*/
+  width: 70%;
+  /*height: 70vh;*/
   padding-top: 100px;
   padding-bottom: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
 .p-info-text-title-container {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .p-info-text-arrow {
@@ -107,19 +103,19 @@
 }
 
 .p-info-text-smallTitle {
-	margin: 0;
-	text-transform: uppercase;
+  margin: 0;
+  text-transform: uppercase;
   font-family: 'DINPro-Bold';
-	font-size: 10px;
+  font-size: 10px;
   padding-left: 10px;
   width: 78px;
 }
 
 .p-info-text-title {
-	font-family: 'DINPro-Bold';
-	margin: 0;
-	margin-left: 38px;
-	font-size: 40px;
+  font-family: 'DINPro-Bold';
+  margin: 0;
+  margin-left: 38px;
+  font-size: 40px;
 }
 
 .p-info-text-arrow-text {
@@ -130,8 +126,8 @@
 
 .p-info-text-description {
   white-space: pre-wrap;
-	margin-left: 150px;
-	margin-top: 30px;
+  margin-left: 150px;
+  margin-top: 30px;
   font-family: 'DINPro-Light';
   font-size: 20px;
 }
@@ -194,7 +190,7 @@
 
 .p-video-section {
   width: 100%;
-	height: 100vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -203,19 +199,18 @@
   height: 100%;
 }
 
-
 /**************** NEXT CASE ******************/
 .p-next-case-container {
   width: 100%;
-	height: 50vh;
+  height: 50vh;
   padding-left: 15%;
   padding-right: 15%;
   background-color: #f0f0f0;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .p-next-case-link {
@@ -227,7 +222,7 @@
 /**************** FOOTER ****************/
 .p-footer-container {
   width: 100%;
-	height: 20vh;
+  height: 20vh;
   background-color: #00c964;
   position: relative;
   padding-left: 15%;
@@ -250,8 +245,7 @@
   }
 }
 
-@media (max-width:480px) {
-
+@media (max-width: 480px) {
   .p-video-section {
     height: auto;
   }
@@ -259,7 +253,7 @@
   .p-video {
     width: 100%;
     height: auto;
-}
+  }
 
   /********* HEADER 480 **********/
   .p-caption-container, .p-caption-container-overlay {
@@ -349,4 +343,61 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+/************* CLASES DE GRADIENTS DE PORFOLIOS *************/
+.salus-header-gradient {
+  background: #16873F;
+  background: -webkit-linear-gradient(left top, #1CC498, #16873F);
+  background: -o-linear-gradient(bottom right, #1CC498, #16873F);
+  background: -moz-linear-gradient(bottom right, #1CC498, #16873F);
+  background: linear-gradient(to bottom right, #1CC498, #16873F);
+}
+
+.coca-header-gradient {
+  background: #FF6464;
+  background: -webkit-linear-gradient(left top, #FF6464, #B40000);
+  background: -o-linear-gradient(bottom right, #FF6464, #B40000);
+  background: -moz-linear-gradient(bottom right, #FF6464, #B40000);
+  background: linear-gradient(to bottom right, #FF6464, #B40000);
+}
+
+.memory-header-gradient {
+  background: #373737;
+  background: -webkit-linear-gradient(left top, #373737, #151515);
+  background: -o-linear-gradient(bottom right, #373737, #151515);
+  background: -moz-linear-gradient(bottom right, #373737, #151515);
+  background: linear-gradient(to bottom right, #373737, #151515);
+}
+
+.scotiabank-header-gradient {
+  background: #FFB199;
+  background: -webkit-linear-gradient(left top, #FFB199, #FF0808);
+  background: -o-linear-gradient(bottom right, #FFB199, #FF0808);
+  background: -moz-linear-gradient(bottom right, #FFB199, #FF0808);
+  background: linear-gradient(to bottom right, #FFB199, #FF0808);
+}
+
+.bimbo-header-gradient {
+  background: #4E83F1;
+  background: -webkit-linear-gradient(left top, #4E83F1, #0C094A);
+  background: -o-linear-gradient(bottom right, #4E83F1, #0C094A);
+  background: -moz-linear-gradient(bottom right, #4E83F1, #0C094A);
+  background: linear-gradient(to bottom right, #4E83F1, #0C094A);
+}
+
+.antel-header-gradient {
+  background: #FBAB7E;
+  background: -webkit-linear-gradient(left top, #FBAB7E, #F7CE68);
+  background: -o-linear-gradient(bottom right, #FBAB7E, #F7CE68);
+  background: -moz-linear-gradient(bottom right, #FBAB7E, #F7CE68);
+  background: linear-gradient(to bottom right, #FBAB7E, #F7CE68);
+}
+
+.sura-header-gradient {
+  background: #04BEFE;
+  background: -webkit-linear-gradient(left top, #04BEFE, #4481EB);
+  background: -o-linear-gradient(bottom right, #04BEFE, #4481EB);
+  background: -moz-linear-gradient(bottom right, #04BEFE, #4481EB);
+  background: linear-gradient(to bottom right, #04BEFE, #4481EB);
 }

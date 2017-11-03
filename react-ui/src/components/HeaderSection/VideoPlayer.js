@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/xseedLogo.png';
+import logo from '../../images/xSeedLogo.png';
 import video1 from '../../videos/xseed720.mp4';
 
 const VideoPlayer = () => {

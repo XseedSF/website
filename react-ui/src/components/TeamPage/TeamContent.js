@@ -1,7 +1,15 @@
 import React from 'react';
 import TeamItem from './TeamItem';
-import {TeamItemHiring, TeamItemSocialMedias, TeamItemContact} from './TeamItemSpecials';
+import {TeamItemHiring, TeamItemSocialMedias, TeamItemContact, TeamItemCultural} from './TeamItemSpecials';
 
+const TeamCulturalArray = [
+  { id: 1, name: 'Media', image: 'http://theworldgame.sbs.com.au/sites/sbs.com.au.theworldgame/files/styles/full/public/20141211001074276887-original.jpg?itok=9wudtu8X&mtime=1418349101' },
+  { id: 2, name: 'Media', image: 'https://i1.wp.com/www.footballinall.com/wp-content/uploads/2017/04/Edinson-Cavani-new-demands-to-extend-the-contract-with-PSG.jpg?w=960&ssl=1' },
+  { id: 3, name: 'Media', image: 'https://metrouk2.files.wordpress.com/2016/02/458761537.jpg?w=748&h=498&crop=1' },
+  { id: 4, name: 'Media', image: 'http://images.performgroup.com/di/library/Goal_Turkey/a1/b2/fernando-muslera-galatasaray_1a3qx1tdpsywy1jssrydsckm1e.jpg?t=1040681963&w=620&h=430' },
+  { id: 5, name: 'Media', image: 'http://www.embajadoresdelgol.com/file/2017/08/Vecino.jpg' },
+  { id: 6, name: 'Media', image: 'http://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/06/19/14978882107762.jpg' },
+];
 //Info of Team and photos
 const TeamArray = [
   { id: 1, name: 'Jesús Portillo', role: 'Co-Founder & CTO', image: require('../../images/team/01.jpg') },
@@ -10,7 +18,7 @@ const TeamArray = [
   { id: 9, name: 'Joaquin Mut', role: 'CFO', image: require('../../images/team/08.jpg') },
   { id: 4, name: 'Diego Cáceres', role: 'Tech Lead', image: require('../../images/team/12.jpg') },
   { id: 5, name: 'Federico Sobral', role: 'Tech Lead', image: require('../../images/team/10.jpg') },
-  { id: 8, name: 'Natalia Calle', role: 'Mobile Developer', image: require('../../images/team/06.jpg') },
+  { id: 8, name: 'Natalia Calle', role: 'Web & Mobile Developer', image: require('../../images/team/06.jpg') },
   { id: 7, name: 'Matías Piñeiro', role: 'Web & Mobile Developer', image: require('../../images/team/14.jpg') },
   { id: 80, name: 'Hiring', image: require('../../images/team/01.jpg') },
   { id: 6, name: 'Nicolás Romeou', role: 'Web Developer', image: require('../../images/team/13.jpg') },
@@ -31,22 +39,51 @@ const TeamArray = [
 
 
 ];
-
+let buffer= [];
+let direction=true
+let count = 0;
 const TeamContent = () => (
   <div className="tp-team-content">
     <div className="flex-container">
       {TeamArray.map((item, index) => {
-        if(index === 8)
-          return <TeamItemHiring key={item.id} {...item} />
-        else if (index === 12)
-          return <TeamItemSocialMedias key={item.id} {...item} />
-        else if (index === 20)
-          return <TeamItemContact key={item.id} {...item} />
+
+        count++;
+
+        if(count===1){
+          buffer= [];
+        }
+
+
+        if(item.name === 'Hiring')
+            buffer.push(<TeamItemHiring key={item.id} {...item} />)
+        else if (item.name === 'Contact')
+            buffer.push(<TeamItemContact key={item.id} {...item} />)
         else
-          return <TeamItem key={item.id} {...item} />
+            buffer.push(<TeamItem key={item.id} {...item} />)
+
+        if(count===4  || (index+1) === TeamArray.length){
+          count = 0;
+          let classname = (direction) ? 'flex-item-group' :'flex-item-group-reverse';
+          direction = !direction;
+          return(
+                <div className={classname}>
+                  <div key={item.id} className="flex-item-big">
+                      {buffer}
+                  </div>
+                  <TeamItemCultural  {...getTeamCulturalMedia()}/>
+                </div>
+            );
+        }
+        else return;
       })}
     </div>
   </div>
 )
+
+function getTeamCulturalMedia(){
+  let retorno = {...TeamCulturalArray[0]};
+  TeamCulturalArray.splice(0,1);
+  return retorno;
+}
 
 export default TeamContent;

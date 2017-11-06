@@ -1,14 +1,15 @@
 import React from 'react';
 import TeamItem from './TeamItem';
-import {TeamItemHiring, TeamItemSocialMedias, TeamItemContact, TeamItemCultural} from './TeamItemSpecials';
+import TeamItemCultural from './TeamItemCultural';
+import {TeamItemHiring, TeamItemSocialMedias, TeamItemContact} from './TeamItemSpecials';
 
 const TeamCulturalArray = [
-  { id: 1, name: 'Media', image: 'http://theworldgame.sbs.com.au/sites/sbs.com.au.theworldgame/files/styles/full/public/20141211001074276887-original.jpg?itok=9wudtu8X&mtime=1418349101' },
-  { id: 2, name: 'Media', image: 'https://i1.wp.com/www.footballinall.com/wp-content/uploads/2017/04/Edinson-Cavani-new-demands-to-extend-the-contract-with-PSG.jpg?w=960&ssl=1' },
-  { id: 3, name: 'Media', image: 'https://metrouk2.files.wordpress.com/2016/02/458761537.jpg?w=748&h=498&crop=1' },
-  { id: 4, name: 'Media', image: 'http://images.performgroup.com/di/library/Goal_Turkey/a1/b2/fernando-muslera-galatasaray_1a3qx1tdpsywy1jssrydsckm1e.jpg?t=1040681963&w=620&h=430' },
-  { id: 5, name: 'Media', image: 'http://www.embajadoresdelgol.com/file/2017/08/Vecino.jpg' },
-  { id: 6, name: 'Media', image: 'http://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/06/19/14978882107762.jpg' },
+  { id: 200, name: 'Media', image: require('../../images/cultural/cultural_01.png') },
+  { id: 201, name: 'Media', image: require('../../images/cultural/cultural_02.png') },
+  { id: 202, name: 'Media', image: require('../../images/cultural/cultural_03.png') },
+  { id: 203, name: 'Media', image: require('../../images/cultural/cultural_04.png') },
+  { id: 204, name: 'Media', image: require('../../images/cultural/cultural_05.png') },
+  { id: 205, name: 'Media', image: require('../../images/cultural/cultural_06.png') },
 ];
 //Info of Team and photos
 const TeamArray = [
@@ -24,14 +25,16 @@ const TeamArray = [
   { id: 6, name: 'Nicolás Romeou', role: 'Web Developer', image: require('../../images/team/13.jpg') },
   { id: 14, name: 'Pablo Corso', role: 'Web & Mobile Developer', image: require('../../images/team/17.jpg') },
   { id: 16, name: 'Matías Corso', role: 'Web & Mobile Developer', image: require('../../images/team/18.jpg') },
-  { id: 120, name: 'Media', image: require('../../images/team/01.jpg') },
   { id: 17, name: 'Gonzalo Castro', role: 'Web & Mobile Developer', image: require('../../images/team/09.jpg') },
   { id: 18, name: 'Santiago Rivero', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/03.jpg') },
-  { id: 12, name: 'Fiorella Ichkhanian', role: 'International Sales Manager', image: require('../../images/team/04.jpg') },
   { id: 15, name: 'Gabriela Flores', role: 'Sales Executive', image: require('../../images/team/16.jpg') },
   { id: 10, name: 'Dayana Bakerdjian', role: 'Quality Assurance', image: require('../../images/team/07.jpg') },
   { id: 11, name: 'Luis Moreno', role: 'Quality Assurance', image: require('../../images/team/02.jpg') },
   { id: 21, name: 'Sofia Schoepf', role: 'Quality Assurance', image: require('../../images/team/11.jpg') },
+  { id: 22, name: 'Carolina Rodriguez', role: 'Quality Assurance', image: require('../../images/team/19.png') },
+  { id: 23, name: 'Rodrigo Varela', role: 'Quality Assurance', image: require('../../images/team/20.png') },
+  { id: 24, name: 'Silvina Boffa', role: 'Quality Assurance', image: require('../../images/team/21.png') },
+  { id: 25, name: 'Victoria Aloy', role: 'Quality Assurance', image: require('../../images/team/22.png') },
   { id: 180, name: 'Contact', image: require('../../images/team/02.jpg') }
   // { id: 19, name: 'Pablo Revetria', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/team-p-revetria.png') },
   // { id: 20, name: 'Federico Sendra', role: 'Mobile Developer', image: require('../../images/team/team-f-sendra.png') },
@@ -42,6 +45,7 @@ const TeamArray = [
 let buffer= [];
 let direction=true
 let count = 0;
+let i = -1;
 const TeamContent = () => (
   <div className="tp-team-content">
     <div className="flex-container">
@@ -62,15 +66,22 @@ const TeamContent = () => (
             buffer.push(<TeamItem key={item.id} {...item} />)
 
         if(count===4  || (index+1) === TeamArray.length){
+          i++;
           count = 0;
           let classname = (direction) ? 'flex-item-group' :'flex-item-group-reverse';
           direction = !direction;
           return(
-                <div className={classname}>
+                <div key={item.id + 'A'} className={classname}>
                   <div key={item.id} className="flex-item-big">
                       {buffer}
                   </div>
-                  <TeamItemCultural  {...getTeamCulturalMedia()}/>
+                  <div className="flex-item-cultural">
+                		<div className="team-item-container team-content">
+                				 <img className="team-img"
+                					 src={TeamCulturalArray[i].image}  />
+                		</div>
+                	</div>
+
                 </div>
             );
         }
@@ -79,11 +90,5 @@ const TeamContent = () => (
     </div>
   </div>
 )
-
-function getTeamCulturalMedia(){
-  let retorno = {...TeamCulturalArray[0]};
-  TeamCulturalArray.splice(0,1);
-  return retorno;
-}
 
 export default TeamContent;

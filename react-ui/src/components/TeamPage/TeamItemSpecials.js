@@ -46,16 +46,6 @@ export const TeamItemSocialMedias = (props) => (
     </div>
 )
 
-export const TeamItemCultural = (props) => (
-	<div className="flex-item-cultural">
-		<div className="team-item-container team-content">
-				 <img className="team-img"
-					 src={props.image} draggable="false" />
-		</div>
-
-	</div>
-)
-
 export const TeamItemContact = (props) => (
 	<div className="flex-item flex-item-contact">
     	<div className="team-item-container team-content team-item-hiring">

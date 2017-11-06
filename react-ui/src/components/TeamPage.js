@@ -26,16 +26,16 @@ const TeamHeaderSection = () => {
 		<div id="home" className="tp-header-container" >
 			<ScrollableAnchor id={'home'}>
 		 		<div>
-		 			<NavHeader 
+		 			<NavHeader
             homeLink="/#home"
             hwwLink="/#hww"
             portfolioLink="/#portfolio"
             teamLink="/team"
             contactUsLink="/#contact"
           />
-		 			<TextCaption />	
+		 			<TextCaption />
 		 		</div>
-		 	</ScrollableAnchor>		       
+		 	</ScrollableAnchor>
 		</div>
 	);
 }

@@ -4,8 +4,8 @@ import TeamItemCultural from './TeamItemCultural';
 import {TeamItemHiring, TeamItemSocialMedias, TeamItemContact} from './TeamItemSpecials';
 
 const TeamCulturalArray = [
-  { id: 200, name: 'Media', image: require('../../images/cultural/cultural_01.png') },
-  { id: 201, name: 'Media', image: require('../../images/cultural/cultural_02.png') },
+  { id: 200, name: 'Media', image: require('../../images/cultural/cultural_07.png') },
+  { id: 201, name: 'Media', image: require('../../images/cultural/cultural_08.png') },
   { id: 202, name: 'Media', image: require('../../images/cultural/cultural_03.png') },
   { id: 203, name: 'Media', image: require('../../images/cultural/cultural_04.png') },
   { id: 204, name: 'Media', image: require('../../images/cultural/cultural_05.png') },

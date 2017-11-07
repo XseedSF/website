@@ -389,6 +389,13 @@ a.team-contact-a, a.team-contact-a:visited{
   margin-top: 30px;
 }
 
+@media(max-width:768px){
+  .flex-item-group, .flex-item-group-reverse, .flex-container {
+    flex-direction: column;
+  }
+}
+
+
 @media (max-width: 768px) {
   .tp-contact-container-caption {
     width: 90%;
@@ -489,5 +496,12 @@ a.team-contact-a, a.team-contact-a:visited{
 
   .team-img {
     height: auto;
+  }
+
+  .flex-item-cultural{
+    height: auto;
+  }
+  .flex-item-big{
+    flex-direction: column;
   }
 }

@@ -7,12 +7,12 @@ import {
 } from "./TeamItemSpecials";
 
 const TeamCulturalArray = [
-  { id: 200, name: 'Media', image: require('../../images/cultural/cultural_07.png') },
-  { id: 201, name: 'Media', image: require('../../images/cultural/cultural_08.png') },
-  { id: 202, name: 'Media', image: require('../../images/cultural/cultural_03.png') },
-  { id: 203, name: 'Media', image: require('../../images/cultural/cultural_04.png') },
-  { id: 204, name: 'Media', image: require('../../images/cultural/cultural_05.png') },
-  { id: 205, name: 'Media', image: require('../../images/cultural/cultural_06.png') },
+  { id: 200, name: 'Cultural', image: require('../../images/cultural/cultural_07.png') },
+  { id: 201, name: 'Cultural', image: require('../../images/cultural/cultural_08.png') },
+  { id: 202, name: 'Cultural', image: require('../../images/cultural/cultural_03.png') },
+  { id: 203, name: 'Cultural', image: require('../../images/cultural/cultural_04.png') },
+  { id: 204, name: 'Cultural', image: require('../../images/cultural/cultural_05.png') },
+  { id: 205, name: 'Cultural', image: require('../../images/cultural/cultural_06.png') },
 ];
 //Info of Team and photos
 const TeamArray = [
@@ -25,19 +25,20 @@ const TeamArray = [
   { id: 8, name: 'Natalia Calle', role: 'Web & Mobile Developer', image: require('../../images/team/06.jpg') },
   { id: 7, name: 'Matías Piñeiro', role: 'Web & Mobile Developer', image: require('../../images/team/14.jpg') },
   { id: 80, name: 'Hiring', image: require('../../images/team/01.jpg') },
-  { id: 6, name: 'Nicolás Romeou', role: 'Web Developer', image: require('../../images/team/13.jpg') },
+  { id: 24, name: 'Silvina Boffa', role: 'Quality Assurance', image: require('../../images/team/21.png') },
   { id: 14, name: 'Pablo Corso', role: 'Web & Mobile Developer', image: require('../../images/team/17.jpg') },
   { id: 16, name: 'Matías Corso', role: 'Web & Mobile Developer', image: require('../../images/team/18.jpg') },
-  { id: 17, name: 'Gonzalo Castro', role: 'Web & Mobile Developer', image: require('../../images/team/09.jpg') },
+  { id: 25, name: 'Victoria Aloy', role: 'Quality Assurance', image: require('../../images/team/22.png') },
   { id: 18, name: 'Santiago Rivero', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/03.jpg') },
   { id: 15, name: 'Gabriela Flores', role: 'Sales Executive', image: require('../../images/team/16.jpg') },
   { id: 10, name: 'Dayana Bakerdjian', role: 'Quality Assurance', image: require('../../images/team/07.jpg') },
+  { id: 180, name: 'Media', image: require('../../images/team/02.jpg') },
   { id: 11, name: 'Luis Moreno', role: 'Quality Assurance', image: require('../../images/team/02.jpg') },
   { id: 21, name: 'Sofia Schoepf', role: 'Quality Assurance', image: require('../../images/team/11.jpg') },
   { id: 22, name: 'Carolina Rodriguez', role: 'Quality Assurance', image: require('../../images/team/19.png') },
   { id: 23, name: 'Rodrigo Varela', role: 'Quality Assurance', image: require('../../images/team/20.png') },
-  { id: 24, name: 'Silvina Boffa', role: 'Quality Assurance', image: require('../../images/team/21.png') },
-  { id: 25, name: 'Victoria Aloy', role: 'Quality Assurance', image: require('../../images/team/22.png') },
+  { id: 6, name: 'Nicolás Romeou', role: 'Web Developer', image: require('../../images/team/13.jpg') },
+  { id: 17, name: 'Gonzalo Castro', role: 'Web & Mobile Developer', image: require('../../images/team/09.jpg') },
   { id: 180, name: 'Contact', image: require('../../images/team/02.jpg') }
   // { id: 19, name: 'Pablo Revetria', role: 'Web & Mobile Designer UX-UI', image: require('../../images/team/team-p-revetria.png') },
   // { id: 20, name: 'Federico Sendra', role: 'Mobile Developer', image: require('../../images/team/team-f-sendra.png') },
@@ -63,6 +64,8 @@ const TeamContent = () => (
             buffer.push(<TeamItemHiring key={item.id} {...item} />)
         else if (item.name === 'Contact')
             buffer.push(<TeamItemContact key={item.id} {...item} />)
+        else if (item.name === 'Media')
+            buffer.push(<TeamItemSocialMedias key={item.id} {...item} />)
         else
             buffer.push(<TeamItem key={item.id} {...item} />)
 
@@ -89,6 +92,6 @@ const TeamContent = () => (
         else return;
       })}
     </div>
-  </div>;
-
+  </div>
+)
 export default TeamContent;

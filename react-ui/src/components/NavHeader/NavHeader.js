@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Headroom from 'react-headroom';
 import { Navbar, Nav } from 'react-bootstrap';
 import NavItem from './NavItem/NavItem.js';
-import logo from '../../images/xseedLogo.png';
+import logo from '../../images/xSeedLogo.png';
 
 class NavHeader extends Component {
 

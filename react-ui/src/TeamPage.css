@@ -69,9 +69,9 @@
 .flex-item {
   background: #00c964;
 
-  width: 400px;
-  height: 400px;
-  margin: 3px;
+  width: 300px;
+  height: 300px;
+  margin: 0px;
 
   color: white;
   font-weight: bold;
@@ -135,9 +135,30 @@
   padding: 0;
   margin: 0;
 }
+.flex-item-cultural{
+  width: 600px;
+  height: 600px;
+  border: 0
+}
 
 .flex-item-hiring {
   background-color: #00c964;
+}
+
+.flex-item-big{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.flex-item-group{
+  display:flex;
+  flex-direction:row;
+}
+
+.flex-item-group-reverse{
+  display:flex;
+  flex-direction:row-reverse;
 }
 
 .team-item-hiring {
@@ -199,6 +220,8 @@ a.team-work-with-us-a, a.team-work-with-us-a:visited{
 
 .flex-item-social {
   background-color: #f0f0f0;
+  width: 300px;
+  height: 300px;
 }
 
 .team-text-social {
@@ -454,6 +477,8 @@ a.team-contact-a, a.team-contact-a:visited{
     height: auto;
     width: 100%;
   }
+
+
 
   .team-item-hiring {
     height: 0;

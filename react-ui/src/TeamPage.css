@@ -500,8 +500,10 @@ a.team-contact-a, a.team-contact-a:visited{
 
   .flex-item-cultural{
     height: auto;
+    width: 100%;
   }
   .flex-item-big{
     flex-direction: column;
+    width: 100%;
   }
 }

@@ -14,6 +14,7 @@ import PortfolioBimbo from "./PortfolioBimbo";
 import PortfolioAntel from "./PortfolioAntel";
 import PortfolioSuraCRM from "./PortfolioSuraCRM";
 import PortfolioSuraAgro from "./PortfolioSuraAgro";
+import PortfolioSplitSpend from "./PortfolioSplitSpend";
 
 const PortfolioPage = ({ match }) => {
   const renderPortfolio = id => {
@@ -42,7 +43,8 @@ const PortfolioPage = ({ match }) => {
         return <PortfolioSuraCRM {...portfolios[id]} />;
       case "12":
         return <PortfolioSuraAgro {...portfolios[id]} />;
-
+      case "13":
+        return <PortfolioSplitSpend {...portfolios[id]} />;
       default:
         return (
           <div>

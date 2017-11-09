@@ -104,7 +104,7 @@ span {
   height: 95vh;
   overflow-y: hidden;
   z-index: -1;
-  background: url('./images/video_loading.png');
+  /*background: url('./images/video_loading.png');*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -507,7 +507,6 @@ a.work-with-us-a, a.work-with-us-a:visited{
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .testimonials-title {

@@ -45,6 +45,12 @@ import suraCRMMockup1 from "../../images/portfolio/suracrm-1.png";
 import suraCRMMockup2 from "../../images/portfolio/suracrm-2.png";
 import suraAgroMockup1 from "../../images/portfolio/suraagro-1.png";
 
+import splitSpendLogo from "../../images/portfolio/splitspend-logo.png";
+import splitSpendBanner01 from "../../images/portfolio/splitspend-banner01.png";
+import splitSpendBanner03 from "../../images/portfolio/splitspend-banner03.png";
+import splitSpendBanner04 from "../../images/portfolio/splitspend-banner04.png";
+
+
 const portfolios = {
   "1": {
     name: "GuTrade",
@@ -468,6 +474,53 @@ a solution to their biggest stock problem.`
       smallTitle: "the solution",
       title: "Simplicity in complexity",
       text: `It’s a complex system, with different categories according to the insurance type the client is interested in. The app we created allows Sura’s customers to define the area of their land extension and the crops they intend to insure, in which season, and in a defined period of time. Once the field has been monitored by one of Sura’s inspectors, each customer is able to manage their insurance police through the SuraGo app.`
+    },
+    nextCase: {
+      id: "13",
+      title: "SplitSpend: Roomating done right"
+    }
+  },
+  "13": {
+    name: "SplitSpend",
+    header: {
+      iconImage: splitSpendLogo,
+      imgStyle: { width: "150px" },
+      gradientClass: "splitspend-header-gradient",
+      name: "SplitSpend",
+      title: "Roomating",
+      title2: "done right",
+      subtitle: "UX & UI",
+      description:
+        "Jon Nam & Virginia Puccio, creators of SplitSpend, came to us looking to create the UI/UX for their web app. Located in San Francisco, California, SplitSpend aims at people involved in shared households, events, or even trips."
+    },
+    infoText1: {
+      smallTitle: "background",
+      title: "Even split is key",
+      text:  `When people share expenses, wether it’s in a household between roommates, a group of friends throwing a party, or families going on a trip, it’s usual to find someon who feels that they’ve spent more money, and troubles arise because of this. SplitSpend is the solution to every money-splitting related issue.`
+    },
+    bigImage1: splitSpendBanner01,
+    infoText2: {
+      smallTitle: "identity",
+      title: "Created from scratch",
+      text:  `SplitSpend is all about preserving relationships in a good place by mantaining expense sharing equal and fair. We took care of creating a new identity that looked up to date yet timeless, and expressed through visual elements, the feeling of caring for their users, and viewing everyone as equal.`
+    },
+    infoText3: {
+      smallTitle: `the
+                  challenge`,
+      title: "First impressions count",
+      text:  `Guiding users from the very first moment they come into contact with the app, in a friendly yet loose way, is planting the seed for a long lasting relationship.`
+    },
+    bigImage2: splitSpendBanner03,
+    infoText4: {
+      smallTitle: "the solution",
+      title: "Key features strike first",
+      text:  `Divided in three parts - Recent activity, Shopping list and History - the Dashboard offers the main features of the app at first glance. The Recent tab gives an overall view of the personal and group finances, including personal balance, missing items notifications, overall progress, and a preview of the recent purchases and who made them. `
+    },
+    bigImage3: splitSpendBanner04,
+    infoText5: {
+      smallTitle: "the core",
+      title: "Where the magic happens",
+      text:  `The Shopping List is the core of the app, helping every group organize the items that have to be purchased. For example, users are allowed to create lists for different rooms in a household, including or excluding users from specific items by just clicking on their photo. This way, when the purchase is made, they’re automatically taken into account -or not- for the group balance..`
     },
     nextCase: {
       id: "1",

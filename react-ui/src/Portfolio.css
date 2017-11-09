@@ -401,3 +401,21 @@
   background: -moz-linear-gradient(bottom right, #04BEFE, #4481EB);
   background: linear-gradient(to bottom right, #04BEFE, #4481EB);
 }
+
+.splitspend-header-gradient {
+  background: #8DDAD5;
+  background: -webkit-linear-gradient(left top, #8DDAD5, #00CDAC);
+  background: -o-linear-gradient(bottom right, #8DDAD5, #00CDAC);
+  background: -moz-linear-gradient(bottom right, #8DDAD5, #00CDAC);
+  background: linear-gradient(to bottom right, #8DDAD5, #00CDAC);
+
+}
+
+.splitspend-slider-div{
+  text-align: -webkit-center;
+}
+
+.splitspend-slider-image{
+  width: 100vw;
+  height: auto;
+}

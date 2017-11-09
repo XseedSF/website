@@ -15,14 +15,18 @@ import caseSalus from "../images/caseSalus.png";
 import caseScotia from "../images/caseScotia.png";
 import caseSuraAgro from "../images/caseSuraAgro.png";
 import caseSuraCRM from "../images/caseSuraCRM.png";
+import caseSplitSpend from "../images/caseSuraCRM.png";
 
 const Brands = [
   { image: require("../images/clients_01.png"), id: 1 },
   { image: require("../images/clients_02.png"), id: 2 },
   { image: require("../images/clients_03.png"), id: 3 },
   { image: require("../images/clients_04.png"), id: 4 },
-  { image: require("../images/clients_05.png"), id: 5 },
-  { image: require("../images/clients_06.png"), id: 6 }
+  { image: require("../images/clients_06.png"), id: 6 },
+  { image: require("../images/clients_07.png"), id: 7 },
+  { image: require("../images/clients_08.png"), id: 8 },
+  { image: require("../images/clients_09.png"), id: 9 },
+  { image: require("../images/clients_10.png"), id: 10 }
 ];
 
 const Portfolio = () =>
@@ -223,6 +227,21 @@ const Portfolio = () =>
         </Link>
       </div>
 
+      {/*<div className="portfolio-project-container p-content">
+        <Link to={"/portfolio/13"}>
+          <img
+            className="portfolio-img"
+            alt="How we work"
+            src={caseSplitSpend}
+            draggable="false"
+          />
+          <div className="p-overlay">
+            <h4 className="portfolio-project-name">
+              {" "}SplitSpend{" "}
+            </h4>
+          </div>
+        </Link>
+      </div>*/}
       {/*<div className="portfolio-project-container p-content">
 							<img className="portfolio-img"
 					     		alt="How we work" src={proyecto} draggable="false" />

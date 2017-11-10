@@ -5,7 +5,7 @@ import fernando from '../images/fernando.png';
 import virginia from '../images/virginia.png';
 const textGaston = "We've been partners with Xseed from the very beginning. Their vast knowledge on Lean methodology, made the product grow according to the needs of our clients, and allowed us to make an effective monetization of development."
 const textFernando = "The team at Xseed is excellent, both on a technical and professional level. They met our development standards, fitted our needs, and are always bringing innovation to our business";
-const textVirginia = "XSeedSF complements SplitSpend wonderfully. Santiago, Andres, and Diego are brilliant, and working with them has been such a pleasure. We had our first meeting remotely where I had the opportunity to explain to them our vision for SplitSpend. The team at XSeedSF understood what we wanted after just one meeting and went to work on the project. The finished product is designed to be beautiful, simple and intuitive – XSeedSF really hit the mark! Santiago even redesigned our company logo and the new look perfectly exemplifies the essence of SplitSpend. I cannot thank the team at XSeedSF enough for their truly outstanding work.";
+const textVirginia = "Xseed complements SplitSpend wonderfully. Having worked with the team has been such a pleasure. We had our first meeting remotely where I had the opportunity to explain to them our vision for SplitSpend. The team at Xseed understood what we wanted after just one meeting and went to work on the project. The finished product is designed to be beautiful, simple and intuitive – Xseed really hit the mark! I cannot thank the team at Xseed enough for their truly outstanding work.";
 
 const Testimonial = (props) => {
 	return (
@@ -41,9 +41,9 @@ class TestimonialsSlider extends React.Component {
 	      <div className='testimonial-slider-container'>
 
 	      	<Slider {...settings}>
-        		<div>
-        			<Testimonial image={fernando}
-        				name='Fernando Jorge' company='Seguros Sura, CTO' text={textFernando}
+						<div>
+        			<Testimonial image={virginia}
+        				name='Virginia Puccio' company='SplitSpend, Co-founder &amp; CEO' text={textVirginia}
         				/>
     				</div>
         		<div>
@@ -52,10 +52,11 @@ class TestimonialsSlider extends React.Component {
         				/>
     				</div>
 						<div>
-        			<Testimonial image={virginia}
-        				name='Virginia Puccio' company='SplitSpend, Co-founder &amp; CEO' text={textVirginia}
+        			<Testimonial image={fernando}
+        				name='Fernando Jorge' company='Seguros Sura, CTO' text={textFernando}
         				/>
     				</div>
+
     			{/*<div>
         			<Testimonial image='http://placekitten.com/g/250/250'
         				name='Jon Doe Jr.' company='Google Inc, CTO' text={text1}

@@ -1497,4 +1497,8 @@ a.team-button-a, a.team-button-a:visited{
   .separator-line-inner {
     width: 100%;
   }
+
+  .contact-container-caption{
+    margin-bottom: 0px!important;
+  }
 }

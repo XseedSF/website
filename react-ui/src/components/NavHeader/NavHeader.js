@@ -3,15 +3,14 @@ import React, { Component } from 'react';
 import Headroom from 'react-headroom';
 import { Navbar, Nav } from 'react-bootstrap';
 import NavItem from './NavItem/NavItem.js';
-import logo from '../../images/xSeedLogo.png';
+import logo from '../../images/xseedLogo.png';
 
 class NavHeader extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       toggleClassName: 'hamburger hamburger--spring'
-    }
+    };
   }
 
   handleClick(e) {
@@ -25,7 +24,6 @@ class NavHeader extends Component {
   }
 
   render() {
-
     const {
       homeLink,
       hwwLink,
@@ -34,34 +32,41 @@ class NavHeader extends Component {
       contactUsLink
     } = this.props;
 
-    let toggleClassName = 'hamburger hamburger--collapse'
-
-    const toggleCallback = (navExpanded) => {
-      if(navExpanded)
-        this.setState({ toggleClassName: 'hamburger hamburger--collapse is-active' });
-      else
-        this.setState({ toggleClassName: 'hamburger hamburger--collapse' });
+    const toggleCallback = navExpanded => {
+      if (navExpanded)
+        this.setState({
+          toggleClassName: 'hamburger hamburger--collapse is-active'
+        });
+      else this.setState({ toggleClassName: 'hamburger hamburger--collapse' });
     };
 
     return (
       <Headroom>
-        <Navbar  collapseOnSelect={true} staticTop={true} onToggle={toggleCallback}>
+        <Navbar
+          collapseOnSelect={true}
+          staticTop={true}
+          onToggle={toggleCallback}
+        >
           <Navbar.Header>
-            <Navbar.Brand >
+            <Navbar.Brand>
               <a href={homeLink}>
-                <img className="navBrandImage" alt="Xseed logo" src={logo} draggable="false" />
+                <img
+                  className="navBrandImage"
+                  alt="Xseed logo"
+                  src={logo}
+                  draggable="false"
+                />
               </a>
             </Navbar.Brand>
-            <Navbar.Toggle className={this.state.toggleClassName} type="button" >
-
-                <span className="hamburger-box">
-                  <span className="hamburger-inner"></span>
-                </span>
+            <Navbar.Toggle className={this.state.toggleClassName} type="button">
+              <span className="hamburger-box">
+                <span className="hamburger-inner" />
+              </span>
             </Navbar.Toggle>
           </Navbar.Header>
-          <Navbar.Collapse  >
+          <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem href={homeLink} >
+              <NavItem href={homeLink}>
                 <span className="navItem">Home</span>
               </NavItem>
               <NavItem href={hwwLink}>
@@ -80,8 +85,8 @@ class NavHeader extends Component {
           </Navbar.Collapse>
         </Navbar>
       </Headroom>
-    )
+    );
   }
-};
+}
 
 export default NavHeader;

@@ -1,40 +1,39 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import proyecto from "../images/proyecto.png";
-import proyectoGu from "../images/caseGu.png";
-import proyectoMelancia from "../images/caseMelancia.png";
-import proyectoSura from "../images/caseSura.png";
+// import proyecto from "../images/proyecto.png";
+import proyectoGu from '../images/caseGu.png';
+import proyectoMelancia from '../images/caseMelancia.png';
+import proyectoSura from '../images/caseSura.png';
 
-import caseAntel from "../images/caseAntel.png";
-import caseBimbo from "../images/caseBimbo.png";
-import caseCoca from "../images/caseCoca.png";
-import caseGeotrakr from "../images/caseGeotrakr.png";
-import caseMemory from "../images/caseMemory.png";
-import caseSalus from "../images/caseSalus.png";
-import caseScotia from "../images/caseScotia.png";
-import caseSuraAgro from "../images/caseSuraAgro.png";
-import caseSuraCRM from "../images/caseSuraCRM.png";
-import caseSplitSpend from "../images/caseSuraCRM.png";
+import caseAntel from '../images/caseAntel.png';
+import caseBimbo from '../images/caseBimbo.png';
+import caseCoca from '../images/caseCoca.png';
+import caseGeotrakr from '../images/caseGeotrakr.png';
+import caseMemory from '../images/caseMemory.png';
+import caseSalus from '../images/caseSalus.png';
+import caseScotia from '../images/caseScotia.png';
+import caseSuraAgro from '../images/caseSuraAgro.png';
+import caseSuraCRM from '../images/caseSuraCRM.png';
+// import caseSplitSpend from "../images/caseSuraCRM.png";
 
 const Brands = [
-  { image: require("../images/clients_01.png"), id: 1 },
-  { image: require("../images/clients_02.png"), id: 2 },
-  { image: require("../images/clients_03.png"), id: 3 },
-  { image: require("../images/clients_04.png"), id: 4 },
-  { image: require("../images/clients_06.png"), id: 6 },
-  { image: require("../images/clients_07.png"), id: 7 },
-  { image: require("../images/clients_08.png"), id: 8 },
-  { image: require("../images/clients_09.png"), id: 9 },
-  { image: require("../images/clients_10.png"), id: 10 }
+  { image: require('../images/clients_01.png'), id: 1 },
+  { image: require('../images/clients_02.png'), id: 2 },
+  { image: require('../images/clients_03.png'), id: 3 },
+  { image: require('../images/clients_04.png'), id: 4 },
+  { image: require('../images/clients_06.png'), id: 6 },
+  { image: require('../images/clients_07.png'), id: 7 },
+  { image: require('../images/clients_08.png'), id: 8 },
+  { image: require('../images/clients_09.png'), id: 9 },
+  { image: require('../images/clients_10.png'), id: 10 }
 ];
 
-const Portfolio = () =>
+const Portfolio = () => (
   <section className="portfolio-container">
     <div className="portfolio-projects">
-
       <div className="portfolio-project-container p-content portfolio-project-container-left-element">
-        <Link to={"/portfolio/1"}>
+        <Link to={'/portfolio/1'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -43,14 +42,15 @@ const Portfolio = () =>
           />
           <div className="p-overlay">
             <h4 className="portfolio-project-name">
-              {" "}GuTrade - Mobile & Web App / Website{" "}
+              {' '}
+              GuTrade - Mobile & Web App / Website{' '}
             </h4>
           </div>
         </Link>
       </div>
 
       <div className="portfolio-project-container p-content portfolio-project-container-left-element">
-        <Link to={"/portfolio/3"}>
+        <Link to={'/portfolio/3'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -73,7 +73,7 @@ const Portfolio = () =>
 						</div>*/}
 
       <div className="portfolio-project-container p-content portfolio-project-container-left-element">
-        <Link to={"/portfolio/2"}>
+        <Link to={'/portfolio/2'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -87,7 +87,7 @@ const Portfolio = () =>
       </div>
 
       <div className="portfolio-project-container p-content portfolio-project-container-left-element">
-        <Link to={"/portfolio/4"}>
+        <Link to={'/portfolio/4'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -101,7 +101,7 @@ const Portfolio = () =>
       </div>
 
       <div className="portfolio-project-container p-content portfolio-project-container-left-element">
-        <Link to={"/portfolio/5"}>
+        <Link to={'/portfolio/5'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -115,10 +115,10 @@ const Portfolio = () =>
       </div>
 
       <div
-        style={{ marginBottom: "150px" }}
+        style={{ marginBottom: '150px' }}
         className="portfolio-project-container p-content portfolio-project-container-left-element "
       >
-        <Link to={"/portfolio/6"}>
+        <Link to={'/portfolio/6'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -138,7 +138,7 @@ const Portfolio = () =>
       </div>
 
       <div className="portfolio-project-container p-content">
-        <Link to={"/portfolio/7"}>
+        <Link to={'/portfolio/7'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -152,7 +152,7 @@ const Portfolio = () =>
       </div>
 
       <div className="portfolio-project-container p-content">
-        <Link to={"/portfolio/8"}>
+        <Link to={'/portfolio/8'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -166,7 +166,7 @@ const Portfolio = () =>
       </div>
 
       <div className="portfolio-project-container p-content">
-        <Link to={"/portfolio/9"}>
+        <Link to={'/portfolio/9'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -175,14 +175,15 @@ const Portfolio = () =>
           />
           <div className="p-overlay">
             <h4 className="portfolio-project-name">
-              {" "}Bimbo - Mobile & Web App{" "}
+              {' '}
+              Bimbo - Mobile & Web App{' '}
             </h4>
           </div>
         </Link>
       </div>
 
       <div className="portfolio-project-container p-content">
-        <Link to={"/portfolio/10"}>
+        <Link to={'/portfolio/10'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -191,14 +192,15 @@ const Portfolio = () =>
           />
           <div className="p-overlay">
             <h4 className="portfolio-project-name">
-              {" "}Vera TV - Mobile & Web App / Website{" "}
+              {' '}
+              Vera TV - Mobile & Web App / Website{' '}
             </h4>
           </div>
         </Link>
       </div>
 
       <div className="portfolio-project-container p-content">
-        <Link to={"/portfolio/11"}>
+        <Link to={'/portfolio/11'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -212,7 +214,7 @@ const Portfolio = () =>
       </div>
 
       <div className="portfolio-project-container p-content">
-        <Link to={"/portfolio/12"}>
+        <Link to={'/portfolio/12'}>
           <img
             className="portfolio-img"
             alt="How we work"
@@ -221,7 +223,8 @@ const Portfolio = () =>
           />
           <div className="p-overlay">
             <h4 className="portfolio-project-name">
-              {" "}Sura - Mobile & Web App / Website{" "}
+              {' '}
+              Sura - Mobile & Web App / Website{' '}
             </h4>
           </div>
         </Link>
@@ -253,10 +256,11 @@ const Portfolio = () =>
     <div className="clear"> </div>
     <div className="portfolio-client-cont">
       <h2 className="portfolio-client-cont-title">
-        {" "}{`Other clients we're very proud of`}
+        {' '}
+        {`Other clients we're very proud of`}
       </h2>
       <div className="portfolio-client-list-cont">
-        {Brands.map(brand =>
+        {Brands.map(brand => (
           <div className="portfolio-client-logo-cont" key={brand.id}>
             <img
               className="portfolio-logo-img"
@@ -265,10 +269,10 @@ const Portfolio = () =>
               draggable="false"
             />
           </div>
-        )}
+        ))}
       </div>
-
     </div>
-  </section>;
+  </section>
+);
 
 export default Portfolio;

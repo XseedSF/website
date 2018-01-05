@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {sendEmail} from './api.js';
+import { sendEmail } from './api.js';
 import ReactTimeout from 'react-timeout';
 import ReCAPTCHA from 'react-google-recaptcha';
 
@@ -26,7 +26,7 @@ class ContactForm extends Component {
     });
   }
 
-  handleInputChange (event) {
+  handleInputChange(event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
@@ -36,24 +36,19 @@ class ContactForm extends Component {
   }
 
   handleSubmit(event) {
-
     event.preventDefault();
-    if(this.state.sending)
-      return;
+    if (this.state.sending) return;
 
-    if(!this.validation())
-      return;
+    if (!this.validation()) return;
 
-    this.setState({errorMessage: ''});
+    this.setState({ errorMessage: '' });
     console.log('handleSubmit');
-    this.setState({sending: true});
-    sendEmail(this.state.name, this.state.email, this.state.message, (res) => {
-
-      this.setState({sending: false});
-      if(res.error)
-        console.log('Email not sent: ', res.error);
-      else if(res.data) {
-        console.log('Email sent: ', res.data);        
+    this.setState({ sending: true });
+    sendEmail(this.state.name, this.state.email, this.state.message, res => {
+      this.setState({ sending: false });
+      if (res.error) console.log('Email not sent: ', res.error);
+      else if (res.data) {
+        console.log('Email sent: ', res.data);
         this.setState({
           name: '',
           email: '',
@@ -62,38 +57,38 @@ class ContactForm extends Component {
           successMessage: 'Message sent correctly!'
         });
         this.captcha.reset();
-        this.props.setTimeout(() => this.setState({successMessage: ''}), 2000);
+        this.props.setTimeout(
+          () => this.setState({ successMessage: '' }),
+          2000
+        );
       }
     });
-
-
   }
 
   validation() {
-    if(this.state.email !== '' && this.state.name !== '' && this.state.message !== '' && this.state['g-recaptcha-response']) {
-      if(!this.validateEmail(this.state.email)) {
+    if (
+      this.state.email !== '' &&
+      this.state.name !== '' &&
+      this.state.message !== '' &&
+      this.state['g-recaptcha-response']
+    ) {
+      if (!this.validateEmail(this.state.email)) {
         console.log('mail invalido');
-        this.setState({errorMessage: 'Mail format is invalid'});
-      }
-      else
-        return true;
-    }
-    else {
-      if(this.state.email === '') {
+        this.setState({ errorMessage: 'Mail format is invalid' });
+      } else return true;
+    } else {
+      if (this.state.email === '') {
         console.log('Debe completar el mail');
-        this.setState({errorMessage: 'Mail can\'t be empty'});
-      }
-      else if(this.state.name === '') {
+        this.setState({ errorMessage: "Mail can't be empty" });
+      } else if (this.state.name === '') {
         console.log('Debe completar el nombre');
-        this.setState({errorMessage: 'Name can\'t be empty'});
-      }
-      else if(this.state.message === '') {
+        this.setState({ errorMessage: "Name can't be empty" });
+      } else if (this.state.message === '') {
         console.log('Debe completar el message');
-        this.setState({errorMessage: 'Message can\'t be empty'});
-      }
-      else if(!this.state['g-recaptcha-response']) {
+        this.setState({ errorMessage: "Message can't be empty" });
+      } else if (!this.state['g-recaptcha-response']) {
         console.log('Debe demostrar que es humano');
-        this.setState({errorMessage: 'You need to prove that you\'re human'});
+        this.setState({ errorMessage: "You need to prove that you're human" });
       }
       return false;
     }
@@ -106,43 +101,59 @@ class ContactForm extends Component {
   }
 
   render() {
-    const sendClassName = !this.state.sending ? 'contact-send-button' : 'contact-send-button disabled';
+    const sendClassName = !this.state.sending
+      ? 'contact-send-button'
+      : 'contact-send-button disabled';
     return (
       <form className="contact-form" onSubmit={this.handleSubmit}>
         <div className="contact-name">
-          <input className="contact-input-text"
+          <input
+            className="contact-input-text"
             placeholder="Name"
-            name="name" type="text"
-            value={this.state.name} required
-            onChange={this.handleInputChange} />
+            name="name"
+            type="text"
+            value={this.state.name}
+            required
+            onChange={this.handleInputChange}
+          />
         </div>
         <div className="contact-email">
-          <input className="contact-input-text"
+          <input
+            className="contact-input-text"
             placeholder="e-mail"
-            name="email" type="email"
-            value={this.state.email} required
-            onChange={this.handleInputChange} />
+            name="email"
+            type="email"
+            value={this.state.email}
+            required
+            onChange={this.handleInputChange}
+          />
         </div>
         <div className="contact-message">
-          <textarea className="contact-textarea"
+          <textarea
+            className="contact-textarea"
             placeholder="Your Message"
             name="message"
-            value={this.state.message} required
-            onChange={this.handleInputChange} />
+            value={this.state.message}
+            required
+            onChange={this.handleInputChange}
+          />
         </div>
         <div className="contact-catcha-cont">
           <ReCAPTCHA
-            ref="recaptcha"
-            ref={(el) => { this.captcha = el; }}
+            ref={el => {
+              this.captcha = el;
+            }}
             sitekey="6LdodxcUAAAAAI4czo4PbQ1HkXVGNQ0YeIte76xv"
-            onChange={this.onChange.bind(this)}/>
-
+            onChange={this.onChange.bind(this)}
+          />
         </div>
-        <div className="contact-button-container" >
-          <input className={sendClassName}
+        <div className="contact-button-container">
+          <input
+            className={sendClassName}
             type="submit"
             disabled={this.state.sending}
-            value={ this.state.sending ? 'Sending' : 'Send'} />
+            value={this.state.sending ? 'Sending' : 'Send'}
+          />
         </div>
         <p className="concact-error"> {this.state.errorMessage} </p>
         <p className="concact-success"> {this.state.successMessage} </p>

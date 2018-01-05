@@ -4,8 +4,8 @@ import './TeamPage.css';
 import './Portfolio.css';
 import './hamburgers.css';
 
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import HeaderSection from './components/HeaderSection';
 import HowWeWork from './components/HowWeWork';
@@ -23,67 +23,65 @@ import teamBg from './images/bgteam02.png';
 
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
-configureAnchors({offset: -0, scrollDuration: 800});
+configureAnchors({ offset: -0, scrollDuration: 800 });
 
 const HomeApp = () => (
-    <div className="App">
-        <ScrollableAnchor id={'home'}>
-            <div>
-            <HeaderSection />
-            </div>
-        </ScrollableAnchor>
+  <div className="App">
+    <ScrollableAnchor id={'home'}>
+      <div>
+        <HeaderSection />
+      </div>
+    </ScrollableAnchor>
 
-        <ScrollableAnchor id={'hww'}>
-            <div>
-                <HowWeWork />
-            </div>
-        </ScrollableAnchor>
+    <ScrollableAnchor id={'hww'}>
+      <div>
+        <HowWeWork />
+      </div>
+    </ScrollableAnchor>
 
-        <ScrollableAnchor id={'portfolio'}>
-            <div>
-                <Portfolio />
-                <img src={guTradeBg} style={{ display: 'none'}}/>
-                <img src={melanciaBg} style={{ display: 'none'}}/>
-                <img src={suraBg} style={{ display: 'none'}}/>
-                <TestimonialsSection />
-            </div>
-        </ScrollableAnchor>
+    <ScrollableAnchor id={'portfolio'}>
+      <div>
+        <Portfolio />
+        <img src={guTradeBg} style={{ display: 'none' }} alt="" />
+        <img src={melanciaBg} style={{ display: 'none' }} alt="" />
+        <img src={suraBg} style={{ display: 'none' }} alt="" />
+        <TestimonialsSection />
+      </div>
+    </ScrollableAnchor>
 
-        <ScrollableAnchor id={'team'}>
-                <div>
-                    <Team />
-                    <img src={teamBg} style={{ display: 'none'}}/>
-                </div>
-        </ScrollableAnchor>
+    <ScrollableAnchor id={'team'}>
+      <div>
+        <Team />
+        <img src={teamBg} style={{ display: 'none' }} alt="" />
+      </div>
+    </ScrollableAnchor>
 
-        <ScrollableAnchor id={'contact'}>
-                <div>
-                    <Contact />
-                </div>
-        </ScrollableAnchor>
-
-    </div>
+    <ScrollableAnchor id={'contact'}>
+      <div>
+        <Contact />
+      </div>
+    </ScrollableAnchor>
+  </div>
 );
 
 class App extends Component {
+  render() {
+    const ScrollToTop = () => {
+      window.scrollTo(0, 0);
+      return null;
+    };
+    return (
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
+        <div>
+          <Route exact={true} path="/" component={HomeApp} />
 
-    render() {
-        const ScrollToTop = () => {
-          window.scrollTo(0, 0);
-          return null;
-        };
-        return (
-            <Router onUpdate={() => window.scrollTo(0, 0)}>
-                <div>
-                    <Route exact={true} path="/" component={HomeApp} />
-
-                    <Route path="/team" component={ScrollToTop} />
-                    <Route path="/team" component={TeamPage} />
-                    <Route path="/portfolio" component={ScrollToTop} />
-                    <Route path="/portfolio/:portfolioId" component={PortfolioPage} />
-                </div>
-            </Router>
-        );
+          <Route path="/team" component={ScrollToTop} />
+          <Route path="/team" component={TeamPage} />
+          <Route path="/portfolio" component={ScrollToTop} />
+          <Route path="/portfolio/:portfolioId" component={PortfolioPage} />
+        </div>
+      </Router>
+    );
   }
 }
 

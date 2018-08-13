@@ -27,12 +27,12 @@ const TeamHeaderSection = () => {
 			<ScrollableAnchor id={'home'}>
 		 		<div>
 		 			<NavHeader
-            homeLink="/#home"
-            hwwLink="/#hww"
-            portfolioLink="/#portfolio"
-            teamLink="/team"
-            contactUsLink="/#contact"
-          />
+                        homeLink="/#home"
+                        hwwLink="/#hww"
+                        portfolioLink="/#portfolio"
+                        teamLink="/team"
+                        contactUsLink="/#contact"
+                    />
 		 			<TextCaption />
 		 		</div>
 		 	</ScrollableAnchor>

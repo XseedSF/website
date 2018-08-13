@@ -173,56 +173,62 @@ const TeamArray = [
   // { id: 20, name: 'Federico Sendra', role: 'Mobile Developer', image: require('../../images/team/team-f-sendra.png') },
   // { id: 13, name: 'Gastón Legnani', role: 'Tech Lead', image: require('../../images/team/team-g-legnani.png') },
 ];
-let buffer = [];
-let direction = true;
-let count = 0;
-let i = -1;
-const TeamContent = () => (
-  <div className="tp-team-content">
-    <div className="flex-container">
-      {TeamArray.map((item, index) => {
-        count++;
 
-        if (count === 1) {
-          buffer = [];
-        }
+const TeamContent = () => {
+  let buffer = [];
+  let direction = true;
+  let count = 0;
+  let i = -1;
 
-        if (item.name === 'Hiring')
-          buffer.push(<TeamItemHiring key={item.id} {...item} />);
-        else if (item.name === 'Contact')
-          buffer.push(<TeamItemContact key={item.id} {...item} />);
-        else if (item.name === 'Media')
-          buffer.push(<TeamItemSocialMedias key={item.id} {...item} />);
-        else buffer.push(<TeamItem key={item.id} {...item} />);
+  return (
+    <div className="tp-team-content">
+      <div className="flex-container">
+        {TeamArray.map((item, index) => {
+          count++;
 
-        if (count === 4 || index + 1 === TeamArray.length) {
-          i++;
-          count = 0;
-          let classname = direction
-            ? 'flex-item-group'
-            : 'flex-item-group-reverse';
-          direction = !direction;
-          return (
-            <div key={item.id + 'A'} className={classname}>
-              <div key={item.id} className="flex-item-big">
-                {buffer}
-              </div>
-              <div className="flex-item-cultural">
-                <div className="team-item-container team-content">
-                  {TeamCulturalArray[i] && (
-                    <img
-                      className="team-img"
-                      src={TeamCulturalArray[i].image}
-                      alt=""
-                    />
-                  )}
+          if (count === 1) {
+            buffer = [];
+          }
+
+          if (item.name === 'Hiring')
+            buffer.push(<TeamItemHiring key={item.id} {...item} />);
+          else if (item.name === 'Contact')
+            buffer.push(<TeamItemContact key={item.id} {...item} />);
+          else if (item.name === 'Media')
+            buffer.push(<TeamItemSocialMedias key={item.id} {...item} />);
+          else buffer.push(<TeamItem key={item.id} {...item} />);
+
+          if (count === 4 || index + 1 === TeamArray.length) {
+            i++;
+            count = 0;
+            let classname = direction
+              ? 'flex-item-group'
+              : 'flex-item-group-reverse';
+            direction = !direction;
+
+            return (
+              <div key={item.id + 'A'} className={classname}>
+                <div key={item.id} className="flex-item-big">
+                  {buffer}
+                </div>
+                <div className="flex-item-cultural">
+                  <div className="team-item-container team-content">
+                    {TeamCulturalArray[i] && (
+                      <img
+                        className="team-img"
+                        src={TeamCulturalArray[i].image}
+                        alt=""
+                      />
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        } else return;
-      })}
+            );
+          } else return;
+        })}
+      </div>
     </div>
-  </div>
-);
+  );
+}
+
 export default TeamContent;
